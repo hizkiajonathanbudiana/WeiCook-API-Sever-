@@ -1,7 +1,13 @@
+const { comparePassword } = require("../helpers/bcrypt");
+const {
+  convertPayloadToToken,
+  convertTokenToPayload,
+} = require("../helpers/jwt");
+
 const { User } = require("../models");
 
 class UserController {
-  static async handleRegister(req, res) {
+  static async handleRegister(req, res, next) {
     try {
       console.log(req.body);
 
@@ -23,25 +29,33 @@ class UserController {
         .status(201)
         .json({ msg: `User with id ${response.id} successfully created !` });
     } catch (error) {
-      console.log(error);
-      let code = 500;
-      let msg = "Internal Server Error";
+      next(error);
+    }
+  }
 
-      if (error.message === "USER_CREATE_FAILED") {
-        code = 400;
-        msg = "Bad Request";
+  static async handleLogin(req, res, next) {
+    try {
+      const { email, password } = req.body;
+
+      const foundUser = await User.findOne({ where: { email: email } });
+
+      if (!foundUser) {
+        throw new Error("INVALID_USERNAME_OR_PASSWORD");
       }
 
-      if (
-        error.name === "SequelizeValidationError" ||
-        error.name === "SequelizeUniqueConstraintError"
-      ) {
-        const err = error.errors.map((el) => el.message);
-        code = 400;
-        msg = err;
+      if (!comparePassword(password, foundUser.password)) {
+        throw new Error("INVALID_USERNAME_OR_PASSWORD");
       }
 
-      res.status(code).json({ error: msg });
+      const payload = {
+        id: foundUser.id,
+      };
+
+      const token = convertPayloadToToken(payload);
+
+      res.status(200).json({ access_token: token });
+    } catch (error) {
+      next(error);
     }
   }
 }
