@@ -1,5 +1,5 @@
 //helpers
-const { convertPayloadToToken } = require("../helpers/jwt");
+const { convertTokenToPayload } = require("../helpers/jwt");
 
 //models
 const { User } = require("../models/index");
@@ -14,17 +14,18 @@ const protectorLogin = async function (req, res, next) {
 
     const token = authorization.split(" ")[1];
 
-    const payload = convertPayloadToToken(token);
+    const payload = convertTokenToPayload(token);
 
     const foundUser = await User.findByPk(payload.id);
 
-    if (!founduser) {
+    if (!foundUser) {
       throw new Error("UNAUTHENTICATED");
     }
 
-    req.dataTambahan = {
+    req.dataUser = {
       id: foundUser.id,
       username: foundUser.username,
+      role: foundUser.role,
     };
 
     next();
@@ -33,4 +34,14 @@ const protectorLogin = async function (req, res, next) {
   }
 };
 
-module.exports = { protectorLogin };
+const protectorAdmin = async function (req, res, next) {
+  try {
+    if (req.dataUser.role !== "Admin") throw new Error("FORBIDDEN");
+
+    next();
+  } catch (error) {
+    next(error);
+  }
+};
+
+module.exports = { protectorLogin, protectorAdmin };

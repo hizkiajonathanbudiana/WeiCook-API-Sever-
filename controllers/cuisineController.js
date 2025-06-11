@@ -1,10 +1,14 @@
 const { User, Cuisine, Category } = require("../models");
-
+const uploadToCloudinary = require("../helpers/cloudinary");
 class CuisineController {
   static async handleCreatePost(req, res, next) {
     try {
-      const { name, description, price, imgUrl, categoryId, authorId } =
-        req.body;
+      const { name, description, price, categoryId, authorId } = req.body;
+
+      if (!req.file) throw new Error("NO_IMG");
+
+      const imgUrl = await uploadToCloudinary(req.file, name);
+      console.log(imgUrl);
 
       const response = await Cuisine.create({
         name,
@@ -55,19 +59,31 @@ class CuisineController {
 
   static async handleUpdatePost(req, res, next) {
     try {
-      const { name, description, price, imgUrl, categoryId, authorId } =
-        req.body;
+      const { id } = req.params;
 
-      if (!(await Cuisine.findByPk(id))) throw new Error("NO_POST_ID");
+      const post = await Cuisine.findByPk(id);
+
+      if (!post) throw new Error("NO_POST_ID");
+
+      if (req.dataUser.role !== "Admin") {
+        if (req.dataUser.id !== post.authorId) {
+          throw new Error("FORBIDDEN");
+        }
+      }
+      const { name, description, price, categoryId, authorId } = req.body;
+
+      if (!req.file) throw new Error("NO_IMG");
+
+      const imgUrl = await uploadToCloudinary(req.file, post.name);
 
       await Cuisine.update(
         { name, description, price, imgUrl, categoryId, authorId },
         { where: { id: id } }
       );
 
-      const post = await Cuisine.findByPk(id);
+      const afterUpdate = await Cuisine.findByPk(id);
 
-      res.status(200).json({ updatedPost: post });
+      res.status(200).json({ updatedPost: afterUpdate });
     } catch (error) {
       next(error);
     }
@@ -83,7 +99,13 @@ class CuisineController {
 
       if (!post) throw new Error("NO_POST_ID");
 
-      await Cuisine.delete({ where: { id: id } });
+      if (req.dataUser.role !== "Admin") {
+        if (req.dataUser.id !== post.authorId) {
+          throw new Error("FORBIDDEN");
+        }
+      }
+
+      await Cuisine.destroy({ where: { id: id } });
 
       res.status(200).json({ msg: `${postName} success to delete` });
     } catch (error) {

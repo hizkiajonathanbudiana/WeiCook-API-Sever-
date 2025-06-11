@@ -22,8 +22,11 @@ app.use((error, req, res, next) => {
   if (error.message === "USER_CREATE_FAILED") {
     code = 400;
     msg = "Bad Request";
-  } else if (error.message === "INVALID_USERNAME_OR_PASSWORD") {
+  } else if (error.message == "NO_USERNAME_OR_PASSWORD") {
     code = 400;
+    msg = "Please input email and password";
+  } else if (error.message === "INVALID_USERNAME_OR_PASSWORD") {
+    code = 401;
     msg = "Invalid email / password";
   } else if (
     error.name === "SequelizeValidationError" ||
@@ -35,6 +38,15 @@ app.use((error, req, res, next) => {
   } else if (error.message === "UNAUTHENTICATED") {
     code = 401;
     msg = "Invalid token";
+  } else if (
+    error.message === "NO_CATEGORY_ID" ||
+    error.message === "NO_POST_ID"
+  ) {
+    code = 404;
+    msg = "Data not found";
+  } else if (error.message === "FORBIDDEN") {
+    code = 403;
+    msg = "Not Authorized";
   }
 
   res.status(code).json({ error: msg });
