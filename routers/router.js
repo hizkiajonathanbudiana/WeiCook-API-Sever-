@@ -1,42 +1,33 @@
 const express = require("express");
 const router = express.Router();
-const UserController = require("../controllers/userController");
-const { convertPayloadToToken } = require("../helpers/jwt");
 
-const { User } = require("../models/index");
+//controllers
+const UserController = require("../controllers/userController");
+const CuisineController = require("../controllers/cuisineController");
+const CategoryController = require("../controllers/categoryController");
+
+//middlewares
+const { protectorLogin } = require("../middlewares/middleware");
+
 //register
 router.post("/register", UserController.handleRegister);
 
 //login
 router.post("/login", UserController.handleLogin);
 
-router.use(async (req, res, next) => {
-  try {
-    const { authorization } = req.headers;
+//middleware global login
+// router.use(protectorLogin);
 
-    if (!authorization) {
-      throw new Error("UNAUTHENTICATED");
-    }
+//category
+router.post("/category/create", CategoryController.handleCreateCategory);
+router.get("/category", CategoryController.showCategories);
+router.put("/category/update/:id", CategoryController.handleUpdateCategory);
+router.delete("/category/delete/:id", CategoryController.handleDeleteCategory);
 
-    const token = authorization.split(" ")[1];
-
-    const payload = convertPayloadToToken(token);
-
-    const foundUser = await User.findByPk(payload.id);
-
-    if (!founduser) {
-      throw new Error("UNAUTHENTICATED");
-    }
-
-    req.dataTambahan = {
-      id: foundUser.id,
-      username: foundUser.username,
-    };
-
-    next();
-  } catch (error) {
-    next(err);
-  }
-});
+//cuisine
+router.post("/cuisine/create", CuisineController.handleCreatePost);
+router.get("/cuisine", CuisineController.showPost);
+router.put("cuisine/update/:id", CuisineController.handleUpdatePost);
+router.delete("/cuisine/delete/:id", CuisineController.handleDeletePost);
 
 module.exports = router;

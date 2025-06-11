@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const app = express();
 const router = require("./routers/router");
@@ -31,6 +32,9 @@ app.use((error, req, res, next) => {
     const err = error.errors.map((el) => el.message);
     code = 400;
     msg = err;
+  } else if (error.message === "UNAUTHENTICATED") {
+    code = 401;
+    msg = "Invalid token";
   }
 
   res.status(code).json({ error: msg });

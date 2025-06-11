@@ -37,6 +37,10 @@ class UserController {
     try {
       const { email, password } = req.body;
 
+      if (!email || !password) {
+        throw new Error("INVALID_USERNAME_OR_PASSWORD");
+      }
+
       const foundUser = await User.findOne({ where: { email: email } });
 
       if (!foundUser) {
@@ -44,7 +48,7 @@ class UserController {
       }
 
       if (!comparePassword(password, foundUser.password)) {
-        throw new Error("INVALID_USERNAME_OR_PASSWORD");
+        throw new Error("WRONG_PASSWORD");
       }
 
       const payload = {

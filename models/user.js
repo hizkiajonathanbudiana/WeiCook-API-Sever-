@@ -10,6 +10,9 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      User.hasMany(models.Cuisine, {
+        foreignKey: "authorId",
+      });
     }
   }
   User.init(
@@ -17,10 +20,10 @@ module.exports = (sequelize, DataTypes) => {
       username: DataTypes.STRING,
       email: {
         type: DataTypes.STRING,
-        allowNull: false,
         unique: {
           msg: "email already used, please choose another",
         },
+        allowNull: false,
         validate: {
           notNull: {
             msg: "Email cant empty",
