@@ -21,7 +21,7 @@ router.use("/pub", pubRouter);
 //middleware global login
 router.use(protectorLogin);
 
-//register
+//register with protectorAdmin
 router.post("/register", protectorAdmin, UserController.handleRegister);
 
 //category

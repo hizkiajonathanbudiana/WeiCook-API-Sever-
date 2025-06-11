@@ -9,12 +9,12 @@ const multer = require("multer");
 
 //cuisine
 router.post(
-  "/create",
+  "/",
   multer({ storage: multer.memoryStorage() }).single("image"),
   CuisineController.handleCreatePost
 );
 router.put(
-  "/update/:id",
+  "/:id",
   multer({ storage: multer.memoryStorage() }).single("image"),
   CuisineController.handleUpdatePost
 );
