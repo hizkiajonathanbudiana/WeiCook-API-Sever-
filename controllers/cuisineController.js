@@ -1,6 +1,6 @@
 const { User, Cuisine, Category } = require("../models");
 const uploadToCloudinary = require("../helpers/cloudinary");
-const { Op } = Sequelize;
+const { Op } = require("sequelize");
 
 class CuisineController {
   static async handleCreatePost(req, res, next) {
@@ -30,13 +30,14 @@ class CuisineController {
   static async showPost(req, res, next) {
     try {
       const { search, filter, sort } = req.query;
+      let { page } = req.query;
 
       const options = {
         include: [
           { model: User, attributes: { exclude: ["password"] } },
           { model: Category },
         ],
-        order: [["createdAt", DESC]],
+        order: [["createdAt", "DESC"]],
       };
 
       if (search || filter) {
@@ -51,13 +52,27 @@ class CuisineController {
         options.where.categoryId = { [Op.eq]: filter };
       }
 
-      if (sort) {
-        options.order = [["createdAt", ASC]];
+      if (sort === "ASC") {
+        options.order = [["createdAt", "ASC"]];
       }
 
-      const posts = await Cuisine.findAll(options);
+      if (!page) {
+        page = 1;
+      }
 
-      res.status(200).json({ cuisinePosts: posts });
+      const limit = 10;
+      options.limit = limit;
+      options.offset = (page - 1) * limit;
+
+      const { count, rows } = await Cuisine.findAndCountAll(options);
+
+      res.status(200).json({
+        total: count,
+        size: limit,
+        totalPage: Math.ceil(count / limit),
+        currentPage: page,
+        data: rows,
+      });
     } catch (error) {
       next(error);
     }
