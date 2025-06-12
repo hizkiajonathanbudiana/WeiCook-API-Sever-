@@ -3,31 +3,31 @@ const router = express.Router();
 
 //controllers
 const UserController = require("../controllers/userController");
-const CuisineController = require("../controllers/cuisineController");
-const CategoryController = require("../controllers/categoryController");
+
+//prefixRouter
+const pubRouter = require("./pubRouter");
+const categoryRouter = require("./categoryRouter");
+const cuisineRouter = require("./cuisineRouter");
 
 //middlewares
-const { protectorLogin } = require("../middlewares/middleware");
-
-//register
-router.post("/register", UserController.handleRegister);
+const { protectorLogin, protectorAdmin } = require("../middlewares/middleware");
 
 //login
 router.post("/login", UserController.handleLogin);
 
+//public
+router.use("/pub", pubRouter);
+
 //middleware global login
-// router.use(protectorLogin);
+router.use(protectorLogin);
+
+//register with protectorAdmin
+router.post("/register", protectorAdmin, UserController.handleRegister);
 
 //category
-router.post("/category/create", CategoryController.handleCreateCategory);
-router.get("/category", CategoryController.showCategories);
-router.put("/category/update/:id", CategoryController.handleUpdateCategory);
-router.delete("/category/delete/:id", CategoryController.handleDeleteCategory);
+router.use("/category", categoryRouter);
 
 //cuisine
-router.post("/cuisine/create", CuisineController.handleCreatePost);
-router.get("/cuisine", CuisineController.showPost);
-router.put("cuisine/update/:id", CuisineController.handleUpdatePost);
-router.delete("/cuisine/delete/:id", CuisineController.handleDeletePost);
+router.use("/cuisine", cuisineRouter);
 
 module.exports = router;

@@ -1,10 +1,16 @@
 const { User, Cuisine, Category } = require("../models");
+const uploadToCloudinary = require("../helpers/cloudinary");
+const { Op } = require("sequelize");
 
 class CuisineController {
   static async handleCreatePost(req, res, next) {
     try {
-      const { name, description, price, imgUrl, categoryId, authorId } =
-        req.body;
+      const { name, description, price, categoryId, authorId } = req.body;
+
+      if (!req.file) throw new Error("NO_IMG");
+
+      const imgUrl = await uploadToCloudinary(req.file, name);
+      console.log(imgUrl);
 
       const response = await Cuisine.create({
         name,
@@ -23,14 +29,50 @@ class CuisineController {
 
   static async showPost(req, res, next) {
     try {
-      const posts = await Cuisine.findAll({
+      const { search, filter, sort } = req.query;
+      let { page } = req.query;
+
+      const options = {
         include: [
           { model: User, attributes: { exclude: ["password"] } },
           { model: Category },
         ],
-      });
+        order: [["createdAt", "DESC"]],
+      };
 
-      res.status(200).json({ cuisinePosts: posts });
+      if (search || filter) {
+        options.where = {};
+      }
+
+      if (search) {
+        options.where.name = { [Op.iLike]: `%${search}%` };
+      }
+
+      if (filter) {
+        options.where.categoryId = { [Op.eq]: filter };
+      }
+
+      if (sort === "ASC") {
+        options.order = [["createdAt", "ASC"]];
+      }
+
+      if (!page) {
+        page = 1;
+      }
+
+      const limit = 10;
+      options.limit = limit;
+      options.offset = (page - 1) * limit;
+
+      const { count, rows } = await Cuisine.findAndCountAll(options);
+
+      res.status(200).json({
+        total: count,
+        size: limit,
+        totalPage: Math.ceil(count / limit),
+        currentPage: page,
+        data: rows,
+      });
     } catch (error) {
       next(error);
     }
@@ -55,19 +97,31 @@ class CuisineController {
 
   static async handleUpdatePost(req, res, next) {
     try {
-      const { name, description, price, imgUrl, categoryId, authorId } =
-        req.body;
+      const { id } = req.params;
 
-      if (!(await Cuisine.findByPk(id))) throw new Error("NO_POST_ID");
+      const post = await Cuisine.findByPk(id);
+
+      if (!post) throw new Error("NO_POST_ID");
+
+      if (req.dataUser.role !== "Admin") {
+        if (req.dataUser.id !== post.authorId) {
+          throw new Error("FORBIDDEN");
+        }
+      }
+      const { name, description, price, categoryId, authorId } = req.body;
+
+      if (!req.file) throw new Error("NO_IMG");
+
+      const imgUrl = await uploadToCloudinary(req.file, post.name);
 
       await Cuisine.update(
         { name, description, price, imgUrl, categoryId, authorId },
         { where: { id: id } }
       );
 
-      const post = await Cuisine.findByPk(id);
+      const afterUpdate = await Cuisine.findByPk(id);
 
-      res.status(200).json({ updatedPost: post });
+      res.status(200).json({ updatedPost: afterUpdate });
     } catch (error) {
       next(error);
     }
@@ -83,7 +137,13 @@ class CuisineController {
 
       if (!post) throw new Error("NO_POST_ID");
 
-      await Cuisine.delete({ where: { id: id } });
+      if (req.dataUser.role !== "Admin") {
+        if (req.dataUser.id !== post.authorId) {
+          throw new Error("FORBIDDEN");
+        }
+      }
+
+      await Cuisine.destroy({ where: { id: id } });
 
       res.status(200).json({ msg: `${postName} success to delete` });
     } catch (error) {
