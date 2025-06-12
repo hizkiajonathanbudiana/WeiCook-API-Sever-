@@ -1,8 +1,10 @@
-require("dotenv").config();
+if (process.env.NODE_ENV !== "production") {
+  require("dotenv").config();
+}
 const express = require("express");
 const app = express();
 const router = require("./routers/router");
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(express.static("public"));
 
@@ -40,6 +42,7 @@ app.use((error, req, res, next) => {
     msg = "Invalid token";
   } else if (
     error.message === "NO_CATEGORY_ID" ||
+    error.message === "NO_POST_ID" ||
     error.message === "NO_POST_ID"
   ) {
     code = 404;

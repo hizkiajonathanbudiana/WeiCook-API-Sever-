@@ -133,9 +133,9 @@ class CuisineController {
 
       const post = await Cuisine.findByPk(id);
 
-      const postName = post.name;
-
       if (!post) throw new Error("NO_POST_ID");
+
+      const postName = post.name;
 
       if (req.dataUser.role !== "Admin") {
         if (req.dataUser.id !== post.authorId) {

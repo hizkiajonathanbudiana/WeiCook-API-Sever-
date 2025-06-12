@@ -18,6 +18,6 @@ router.put(
   multer({ storage: multer.memoryStorage() }).single("image"),
   CuisineController.handleUpdatePost
 );
-router.delete("/delete/:id", CuisineController.handleDeletePost);
+router.delete("/:id", CuisineController.handleDeletePost);
 
 module.exports = router;
