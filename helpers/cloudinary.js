@@ -16,6 +16,7 @@ async function uploadToCloudinary(reqFile, name) {
       public_id: `cuisine_${name}`,
     });
 
+    console.log(uploadResult);
     return uploadResult.secure_url;
   } catch (error) {
     throw error;
