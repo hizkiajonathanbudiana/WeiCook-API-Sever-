@@ -1,5 +1,7 @@
 const { User, Cuisine, Category } = require("../models");
 const uploadToCloudinary = require("../helpers/cloudinary");
+const { Op } = Sequelize;
+
 class CuisineController {
   static async handleCreatePost(req, res, next) {
     try {
@@ -27,12 +29,33 @@ class CuisineController {
 
   static async showPost(req, res, next) {
     try {
-      const posts = await Cuisine.findAll({
+      const { search, filter, sort } = req.query;
+
+      const options = {
         include: [
           { model: User, attributes: { exclude: ["password"] } },
           { model: Category },
         ],
-      });
+        order: [["createdAt", DESC]],
+      };
+
+      if (search || filter) {
+        options.where = {};
+      }
+
+      if (search) {
+        options.where.name = { [Op.iLike]: `%${search}%` };
+      }
+
+      if (filter) {
+        options.where.categoryId = { [Op.eq]: filter };
+      }
+
+      if (sort) {
+        options.order = [["createdAt", ASC]];
+      }
+
+      const posts = await Cuisine.findAll(options);
 
       res.status(200).json({ cuisinePosts: posts });
     } catch (error) {
