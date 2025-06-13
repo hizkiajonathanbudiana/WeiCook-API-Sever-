@@ -2,7 +2,7 @@
 const { convertTokenToPayload } = require("../helpers/jwt");
 
 //models
-const { User } = require("../models/index");
+const { User, Cuisine, Category } = require("../models");
 
 const protectorLogin = async function (req, res, next) {
   try {
@@ -44,4 +44,24 @@ const protectorAdmin = async function (req, res, next) {
   }
 };
 
-module.exports = { protectorLogin, protectorAdmin };
+const protectorPosts = async function (req, res, next) {
+  try {
+    const { id } = req.params;
+
+    const post = await Cuisine.findByPk(id);
+
+    if (!post) throw new Error("NO_POST_ID");
+
+    if (req.dataUser.role !== "Admin") {
+      if (req.dataUser.id !== post.authorId) {
+        throw new Error("FORBIDDEN");
+      }
+    }
+
+    next();
+  } catch (error) {
+    next(error);
+  }
+};
+
+module.exports = { protectorLogin, protectorAdmin, protectorPosts };

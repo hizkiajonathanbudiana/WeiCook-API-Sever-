@@ -1,6 +1,6 @@
 const { User, Cuisine, Category } = require("../models");
 const uploadToCloudinary = require("../helpers/cloudinary");
-const { Op } = require("sequelize");
+const { Op, where } = require("sequelize");
 
 class CuisineController {
   static async handleCreatePost(req, res, next) {
@@ -37,7 +37,7 @@ class CuisineController {
           { model: User, attributes: { exclude: ["password"] } },
           { model: Category },
         ],
-        order: [["createdAt", "DESC"]],
+        order: [["id", "ASC"]],
       };
 
       if (search || filter) {
@@ -54,6 +54,10 @@ class CuisineController {
 
       if (sort === "ASC") {
         options.order = [["createdAt", "ASC"]];
+      }
+
+      if (sort === "DESC") {
+        options.order = [["createdAt", "DESC"]];
       }
 
       if (!page) {
@@ -99,20 +103,11 @@ class CuisineController {
     try {
       const { id } = req.params;
 
-      const post = await Cuisine.findByPk(id);
-
-      if (!post) throw new Error("NO_POST_ID");
-
-      if (req.dataUser.role !== "Admin") {
-        if (req.dataUser.id !== post.authorId) {
-          throw new Error("FORBIDDEN");
-        }
-      }
       const { name, description, price, categoryId, authorId } = req.body;
 
       if (!req.file) throw new Error("NO_IMG");
 
-      const imgUrl = await uploadToCloudinary(req.file, post.name);
+      const imgUrl = await uploadToCloudinary(req.file, name);
 
       await Cuisine.update(
         { name, description, price, imgUrl, categoryId, authorId },
@@ -133,27 +128,35 @@ class CuisineController {
 
       const post = await Cuisine.findByPk(id);
 
-      const postName = post.name;
-
       if (!post) throw new Error("NO_POST_ID");
 
-      if (req.dataUser.role !== "Admin") {
-        if (req.dataUser.id !== post.authorId) {
-          throw new Error("FORBIDDEN");
-        }
-      }
+      const postName = post.name;
 
       await Cuisine.destroy({ where: { id: id } });
 
-      res.status(200).json({ msg: `${postName} success to delete` });
+      res.status(200).json({ message: `${postName} success to delete` });
     } catch (error) {
       next(error);
     }
   }
 
-  static async x(req, res, next) {
+  static async handleUpdateImage(req, res, next) {
     try {
-      res.status(200).json({ x: "hi" });
+      const { id } = req.params;
+
+      if (!req.file) throw new Error("NO_IMG");
+
+      const post = await Cuisine.findByPk(id);
+
+      if (!post) throw new Error("NO_POST_ID");
+
+      const imgUrl = await uploadToCloudinary(req.file, post.name);
+
+      await Cuisine.update({ imgUrl }, { where: { id: id } });
+
+      res.status(200).json({
+        message: `Image ${post.name} success to update, link: ${imgUrl}`,
+      });
     } catch (error) {
       next(error);
     }

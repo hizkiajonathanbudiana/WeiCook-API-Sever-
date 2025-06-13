@@ -1,8 +1,10 @@
-require("dotenv").config();
+if (process.env.NODE_ENV !== "production") {
+  require("dotenv").config();
+}
 const express = require("express");
 const app = express();
 const router = require("./routers/router");
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(express.static("public"));
 
@@ -35,7 +37,10 @@ app.use((error, req, res, next) => {
     const err = error.errors.map((el) => el.message);
     code = 400;
     msg = err;
-  } else if (error.message === "UNAUTHENTICATED") {
+  } else if (
+    error.message === "UNAUTHENTICATED" ||
+    error.name === "JsonWebTokenError"
+  ) {
     code = 401;
     msg = "Invalid token";
   } else if (
@@ -47,10 +52,14 @@ app.use((error, req, res, next) => {
   } else if (error.message === "FORBIDDEN") {
     code = 403;
     msg = "Not Authorized";
+  } else if (error.message === "NO_IMG") {
+    code = 599;
+    msg = "Image is required";
   }
 
   res.status(code).json({ error: msg });
 });
+
 app.listen(port, () => {
   console.log("listening on port", port);
 });

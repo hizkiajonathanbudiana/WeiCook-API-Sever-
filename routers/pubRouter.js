@@ -5,7 +5,7 @@ const router = express.Router();
 const CuisineController = require("../controllers/cuisineController");
 
 //public
-router.get("/cuisine", CuisineController.showPost);
-router.get("/cuisine/:id", CuisineController.showPostDetails);
+router.get("/cuisines", CuisineController.showPost);
+router.get("/cuisines/:id", CuisineController.showPostDetails);
 
 module.exports = router;

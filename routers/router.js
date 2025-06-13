@@ -25,9 +25,9 @@ router.use(protectorLogin);
 router.post("/register", protectorAdmin, UserController.handleRegister);
 
 //category
-router.use("/category", categoryRouter);
+router.use("/categories", categoryRouter);
 
 //cuisine
-router.use("/cuisine", cuisineRouter);
+router.use("/cuisines", cuisineRouter);
 
 module.exports = router;
