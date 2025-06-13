@@ -22,4 +22,11 @@ router.put(
 );
 router.delete("/:id", protectorPosts, CuisineController.handleDeletePost);
 
+router.patch(
+  "/:id",
+  multer({ storage: multer.memoryStorage() }).single("image"),
+  protectorPosts,
+  CuisineController.handleUpdateImage
+);
+
 module.exports = router;

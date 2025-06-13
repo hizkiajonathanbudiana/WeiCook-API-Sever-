@@ -1,6 +1,6 @@
 const { User, Cuisine, Category } = require("../models");
 const uploadToCloudinary = require("../helpers/cloudinary");
-const { Op } = require("sequelize");
+const { Op, where } = require("sequelize");
 
 class CuisineController {
   static async handleCreatePost(req, res, next) {
@@ -135,6 +135,28 @@ class CuisineController {
       await Cuisine.destroy({ where: { id: id } });
 
       res.status(200).json({ message: `${postName} success to delete` });
+    } catch (error) {
+      next(error);
+    }
+  }
+
+  static async handleUpdateImage(req, res, next) {
+    try {
+      const { id } = req.params;
+
+      if (!req.file) throw new Error("NO_IMG");
+
+      const post = await Cuisine.findByPk(id);
+
+      if (!post) throw new Error("NO_POST_ID");
+
+      const imgUrl = await uploadToCloudinary(req.file, post.name);
+
+      await Cuisine.update({ imgUrl }, { where: { id: id } });
+
+      res.status(200).json({
+        message: `Image ${post.name} success to update, link: ${imgUrl}`,
+      });
     } catch (error) {
       next(error);
     }

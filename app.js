@@ -52,13 +52,16 @@ app.use((error, req, res, next) => {
   } else if (error.message === "FORBIDDEN") {
     code = 403;
     msg = "Not Authorized";
+  } else if (error.message === "NO_IMG") {
+    code = 599;
+    msg = "Image is required";
   }
 
   res.status(code).json({ error: msg });
 });
 
-// app.listen(port, () => {
-//   console.log("listening on port", port);
-// });
+app.listen(port, () => {
+  console.log("listening on port", port);
+});
 
 module.exports = app;

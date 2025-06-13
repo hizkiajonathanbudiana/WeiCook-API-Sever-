@@ -386,9 +386,12 @@ describe("DELETE /cuisines/:id", () => {
   //wrong token
   describe("DELETE /cuisines/3 - fail - invalid token", () => {
     it("code : 401, message: string", async () => {
-      const response = await request(app).delete("/cuisines/3");
+      const response = await request(app)
+        .delete("/cuisines/3")
+        .set("Authorization", `Bearer FakeToken`);
+
       expect(response.status).toBe(401);
-      expect(response.body).toHaveProperty("error", expect.any(String));
+      expect(response.body).toHaveProperty("message", expect.any(String));
     });
   });
 
