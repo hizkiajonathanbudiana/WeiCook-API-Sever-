@@ -37,7 +37,10 @@ app.use((error, req, res, next) => {
     const err = error.errors.map((el) => el.message);
     code = 400;
     msg = err;
-  } else if (error.message === "UNAUTHENTICATED") {
+  } else if (
+    error.message === "UNAUTHENTICATED" ||
+    error.name === "JsonWebTokenError"
+  ) {
     code = 401;
     msg = "Invalid token";
   } else if (

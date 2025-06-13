@@ -54,7 +54,57 @@ afterAll(async () => {
 
 //create cuisine post
 describe("POST /cuisines", () => {
-  describe("POST /cuisines - suceeed", () => {
+  //blm login
+  describe("POST /cuisines - fail - blm login", () => {
+    it("code 401, createdPost: anyString", async () => {
+      const response = await request(app)
+        .post("/cuisines")
+        .field("name", "Sate Ayam")
+        .field("description", "Sate ayam madura")
+        .field("price", 15000)
+        .field("categoryId", 2)
+        .field("authorId", 1)
+        .attach(
+          "image",
+          Buffer.from(
+            "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAn8BTZPYXjcAAAAASUVORK5CYII=",
+            "base64"
+          ),
+          "test.jpg"
+        );
+
+      expect(response.status).toBe(401);
+      expect(response.body).toHaveProperty("error", expect.any(String));
+    });
+  });
+
+  //invalid token
+  describe("POST /cuisines - fail - invalid token", () => {
+    it("code 401, error: anyString", async () => {
+      const response = await request(app)
+        .post("/cuisines")
+        .set("Authorization", `Bearer FakeToken`)
+        .field("name", "Sate Ayam")
+        .field("description", "Sate ayam madura")
+        .field("price", 15000)
+        .field("categoryId", 2)
+        .field("authorId", 1)
+        .attach(
+          "image",
+          Buffer.from(
+            "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAn8BTZPYXjcAAAAASUVORK5CYII=",
+            "base64"
+          ),
+          "test.jpg"
+        );
+
+      expect(response.status).toBe(401);
+      expect(response.body).toHaveProperty("error", expect.any(String));
+    });
+  });
+
+  //create post
+  describe("POST /cuisines - suceeed - create post", () => {
     it("code 201, createdPost: anyObject", async () => {
       const response = await request(app)
         .post("/cuisines")
@@ -78,8 +128,8 @@ describe("POST /cuisines", () => {
     });
   });
 
-  describe("POST /cuisines - fail", () => {
-    it("code: 400", async () => {
+  describe("POST /cuisines - fail - validation", () => {
+    it("code: 400, error : anyArray", async () => {
       const response = await request(app)
         .post("/cuisines")
         .set("Authorization", `Bearer ${tokenAdminOne}`)
@@ -103,10 +153,10 @@ describe("POST /cuisines", () => {
   });
 });
 
-//post cuisines
+// cuisines
 describe("GET /pub/cuisines", () => {
-  describe("GET /pub/cuisines - suceeed", () => {
-    it("", async () => {
+  describe("GET /pub/cuisines - suceeed - get Cuisines + pagination", () => {
+    it("code: 200, expected to have anyObject, data length <= 10, size = 10", async () => {
       const response = await request(app).get("/pub/cuisines");
       expect(response.status).toBe(200);
       expect(response.body).toHaveProperty("data", expect.any(Array));
@@ -115,8 +165,8 @@ describe("GET /pub/cuisines", () => {
     });
   });
 
-  describe("GET /pub/cuisines?search=nasi - suceeed", () => {
-    it("", async () => {
+  describe("GET /pub/cuisines?search=nasi - suceeed - search", () => {
+    it("code: 200, expected data is an Array and length more than 0", async () => {
       const response = await request(app).get("/pub/cuisines?search=nasi");
       expect(response.status).toBe(200);
       expect(response.body).toHaveProperty("data", expect.any(Array));
@@ -124,26 +174,26 @@ describe("GET /pub/cuisines", () => {
     });
   });
 
-  describe("GET /pub/cuisines?search=12345 - fail", () => {
-    it("", async () => {
+  describe("GET /pub/cuisines?search=12345 - fail - no cuisine name with 12345", () => {
+    it("expected total is 0", async () => {
       const response = await request(app).get("/pub/cuisines?search=12345");
       expect(response.body).toHaveProperty("total", 0);
     });
   });
 
   describe("GET /pub/cuisines?filter=1 - suceeed", () => {
-    it("", async () => {
+    it("code : 200, expected data is an array. length more than 0, with data.Category id is 1", async () => {
       const response = await request(app).get("/pub/cuisines?filter=1");
       expect(response.status).toBe(200);
       expect(response.body).toHaveProperty("data", expect.any(Array));
       expect(response.body.data.length).toBeGreaterThan(0);
-      expect(response.body.data[0].Category).toHaveProperty("id", 1);
+      expect(response.body.data[3].Category).toHaveProperty("id", 1);
     });
   });
 
-  describe("GET /pub/cuisines?sort=DESC - suceeed", () => {
-    it("", async () => {
-      const response = await request(app).get("/pub/cuisines?sort=ASC");
+  describe("GET /pub/cuisines?sort=DESC - suceeed - sorting", () => {
+    it("code: 200, expected data sorted by createdAt DESC", async () => {
+      const response = await request(app).get("/pub/cuisines?sort=DESC");
       expect(response.status).toBe(200);
       expect(response.body).toHaveProperty("data", expect.any(Array));
       expect(
@@ -157,16 +207,16 @@ describe("GET /pub/cuisines", () => {
 
 //details cuisine
 describe("GET /pub/cuisines/:id", () => {
-  describe("GET /pub/cuisines/1 - suceeed", () => {
-    it("", async () => {
+  describe("GET /pub/cuisines/1 - suceeed - cuisine details", () => {
+    it("code: 200, postDetails: Object", async () => {
       const response = await request(app).get("/pub/cuisines/1");
       expect(response.status).toBe(200);
       expect(response.body).toHaveProperty("postDetails", expect.any(Object));
     });
   });
 
-  describe("GET /pub/cuisines/999 - fail", () => {
-    it("", async () => {
+  describe("GET /pub/cuisines/999 - fail - cant find cuisine", () => {
+    it("code: 404, error : string", async () => {
       const response = await request(app).get("/pub/cuisines/999");
       expect(response.status).toBe(404);
       expect(response.body).toHaveProperty("error", expect.any(String));
@@ -176,9 +226,58 @@ describe("GET /pub/cuisines/:id", () => {
 
 //update
 describe("PUT /cuisines/:id", () => {
+  //update, but havent login
+  describe("PUT /cuisines/4 - (mustlogin) - fail havent login", () => {
+    it("code: 401, error : string", async () => {
+      const response = await request(app)
+        .put("/cuisines/4")
+        .field("name", "Sate Ayam")
+        .field("description", "Sate ayam madura")
+        .field("price", 15000)
+        .field("categoryId", 2)
+        .field("authorId", 4)
+        .attach(
+          "image",
+          Buffer.from(
+            "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAn8BTZPYXjcAAAAASUVORK5CYII=",
+            "base64"
+          ),
+          "test2.jpg"
+        );
+
+      expect(response.status).toBe(401);
+      expect(response.body).toHaveProperty("error", expect.any(String));
+    });
+  });
+
+  //update but token not valid
+  describe("PUT /cuisines/4 - fail - token not valid", () => {
+    it("code: 401, error : string", async () => {
+      const response = await request(app)
+        .put("/cuisines/4")
+        .set("Authorization", `Bearer FakeToken`)
+        .field("name", "Sate Ayam")
+        .field("description", "Sate ayam madura")
+        .field("price", 15000)
+        .field("categoryId", 2)
+        .field("authorId", 4)
+        .attach(
+          "image",
+          Buffer.from(
+            "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAn8BTZPYXjcAAAAASUVORK5CYII=",
+            "base64"
+          ),
+          "test2.jpg"
+        );
+
+      expect(response.status).toBe(401);
+      expect(response.body).toHaveProperty("error", expect.any(String));
+    });
+  });
+
   //update as admin, testin if can change/update other post that authorId is not the admin id
-  describe("PUT /cuisines/4 - suceeed", () => {
-    it("code 200, updatedPost: anyObject", async () => {
+  describe("PUT /cuisines/4 - suceeed - update as an admin", () => {
+    it("code 200, updatedPost: object", async () => {
       const response = await request(app)
         .put("/cuisines/4")
         .set("Authorization", `Bearer ${tokenAdminOne}`)
@@ -201,8 +300,9 @@ describe("PUT /cuisines/:id", () => {
     });
   });
 
-  describe("PUT /cuisines/4 - fail", () => {
-    it("code: 400", async () => {
+  //validation
+  describe("PUT /cuisines/4 - fail - validation", () => {
+    it("code: 400, error : array", async () => {
       const response = await request(app)
         .put("/cuisines/4")
         .set("Authorization", `Bearer ${tokenAdminOne}`)
@@ -225,8 +325,8 @@ describe("PUT /cuisines/:id", () => {
     });
   });
 
-  describe("PUT /cuisines/999 - fail", () => {
-    it("code: 404", async () => {
+  describe("PUT /cuisines/999 - fail - cant find cuisine id", () => {
+    it("code: 404, error : string", async () => {
       const response = await request(app)
         .put("/cuisines/999")
         .set("Authorization", `Bearer ${tokenAdminOne}`);
@@ -236,8 +336,8 @@ describe("PUT /cuisines/:id", () => {
   });
 
   //staff editing post that posted by em
-  describe("PUT /cuisines/3 - fail", () => {
-    it("", async () => {
+  describe("PUT /cuisines/3 - fail - role staff edit his own post", () => {
+    it("code: 200, updatedPost: object", async () => {
       const response = await request(app)
         .put("/cuisines/3")
         .set("Authorization", `Bearer ${tokenStaffOne}`)
@@ -260,8 +360,8 @@ describe("PUT /cuisines/:id", () => {
   });
 
   //staff editing post that posted by other staff
-  describe("PUT /cuisines/4 - fail", () => {
-    it("", async () => {
+  describe("PUT /cuisines/4 - fail - edit post that not his own post", () => {
+    it("code: 403, error : string", async () => {
       const response = await request(app)
         .put("/cuisines/4")
         .set("Authorization", `Bearer ${tokenStaffOne}`);
@@ -274,9 +374,27 @@ describe("PUT /cuisines/:id", () => {
 
 //delete posts
 describe("DELETE /cuisines/:id", () => {
+  //must login
+  describe("DELETE /cuisines/3 - fail - must login", () => {
+    it("code : 401, message: string", async () => {
+      const response = await request(app).delete("/cuisines/3");
+      expect(response.status).toBe(401);
+      expect(response.body).toHaveProperty("error", expect.any(String));
+    });
+  });
+
+  //wrong token
+  describe("DELETE /cuisines/3 - fail - invalid token", () => {
+    it("code : 401, message: string", async () => {
+      const response = await request(app).delete("/cuisines/3");
+      expect(response.status).toBe(401);
+      expect(response.body).toHaveProperty("error", expect.any(String));
+    });
+  });
+
   //delte as admin, testin if can delete other post that authorId is not the admin id
-  describe("DELETE /cuisines/3 - suceeed", () => {
-    it("", async () => {
+  describe("DELETE /cuisines/3 - suceeed - admin delete post", () => {
+    it("code : 200, message: string", async () => {
       const response = await request(app)
         .delete("/cuisines/3")
         .set("Authorization", `Bearer ${tokenAdminTwo}`);
@@ -285,8 +403,9 @@ describe("DELETE /cuisines/:id", () => {
     });
   });
 
-  describe("DELETE /cuisines/3 - fail", () => {
-    it("", async () => {
+  //cant find post
+  describe("DELETE /cuisines/3 - fail - cant find post id", () => {
+    it("code: 404, error : string", async () => {
       const response = await request(app)
         .delete("/cuisines/3")
         .set("Authorization", `Bearer ${tokenAdminTwo}`);
@@ -296,8 +415,8 @@ describe("DELETE /cuisines/:id", () => {
   });
 
   //staff deleting his own post
-  describe("DELETE /cuisines/4 - succeed", () => {
-    it("", async () => {
+  describe("DELETE /cuisines/4 - succeed - staff deleting his own post", () => {
+    it("code : 200, message: string", async () => {
       const response = await request(app)
         .delete("/cuisines/4")
         .set("Authorization", `Bearer ${tokenStaffTwo}`);
@@ -307,8 +426,8 @@ describe("DELETE /cuisines/:id", () => {
   });
 
   //staff deleting that is not his post
-  describe("DELETE /cuisines/5 - fail", () => {
-    it("", async () => {
+  describe("DELETE /cuisines/5 - fail - staff deleting that is not his own post", () => {
+    it("code: 403, error : string", async () => {
       const response = await request(app)
         .delete("/cuisines/5")
         .set("Authorization", `Bearer ${tokenStaffTwo}`);
