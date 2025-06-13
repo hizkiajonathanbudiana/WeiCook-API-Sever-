@@ -37,7 +37,7 @@ class CuisineController {
           { model: User, attributes: { exclude: ["password"] } },
           { model: Category },
         ],
-        order: [["createdAt", "DESC"]],
+        order: [["id", "ASC"]],
       };
 
       if (search || filter) {
@@ -54,6 +54,10 @@ class CuisineController {
 
       if (sort === "ASC") {
         options.order = [["createdAt", "ASC"]];
+      }
+
+      if (sort === "DESC") {
+        options.order = [["createdAt", "DESC"]];
       }
 
       if (!page) {
@@ -145,7 +149,7 @@ class CuisineController {
 
       await Cuisine.destroy({ where: { id: id } });
 
-      res.status(200).json({ msg: `${postName} success to delete` });
+      res.status(200).json({ message: `${postName} success to delete` });
     } catch (error) {
       next(error);
     }

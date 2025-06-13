@@ -1,0 +1,42 @@
+[
+  {
+    "username": "admin_satu",
+    "email": "admin1@mail.com",
+    "password": "12345",
+    "role": "Admin",
+    "phoneNumber": "081211112222",
+    "address": "Jl. Merdeka No. 1, Jakarta"
+  },
+  {
+    "username": "admin_dua",
+    "email": "admin2@mail.com",
+    "password": "12345",
+    "role": "Admin",
+    "phoneNumber": "081233334444",
+    "address": "Jl. Merdeka No. 2, Jakarta"
+  },
+  {
+    "username": "staff_satu",
+    "email": "staff1@mail.com",
+    "password": "12345",
+    "role": "Staff",
+    "phoneNumber": "087811112222",
+    "address": "Jl. Pahlawan No. 10, Tangerang"
+  },
+  {
+    "username": "staff_dua",
+    "email": "staff2@mail.com",
+    "password": "12345",
+    "role": "Staff",
+    "phoneNumber": "087833334444",
+    "address": "Jl. Pahlawan No. 20, Tangerang"
+  },
+  {
+    "username": "staff_tiga",
+    "email": "staff3@mail.com",
+    "password": "12345",
+    "role": "Staff",
+    "phoneNumber": "085611112222",
+    "address": "Jl. Pahlawan No. 30, Tangerang"
+  }
+]

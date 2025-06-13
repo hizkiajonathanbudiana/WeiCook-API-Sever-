@@ -42,7 +42,6 @@ app.use((error, req, res, next) => {
     msg = "Invalid token";
   } else if (
     error.message === "NO_CATEGORY_ID" ||
-    error.message === "NO_POST_ID" ||
     error.message === "NO_POST_ID"
   ) {
     code = 404;
@@ -54,8 +53,9 @@ app.use((error, req, res, next) => {
 
   res.status(code).json({ error: msg });
 });
-app.listen(port, () => {
-  console.log("listening on port", port);
-});
+
+// app.listen(port, () => {
+//   console.log("listening on port", port);
+// });
 
 module.exports = app;
