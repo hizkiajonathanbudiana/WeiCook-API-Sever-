@@ -103,20 +103,11 @@ class CuisineController {
     try {
       const { id } = req.params;
 
-      const post = await Cuisine.findByPk(id);
-
-      if (!post) throw new Error("NO_POST_ID");
-
-      if (req.dataUser.role !== "Admin") {
-        if (req.dataUser.id !== post.authorId) {
-          throw new Error("FORBIDDEN");
-        }
-      }
       const { name, description, price, categoryId, authorId } = req.body;
 
       if (!req.file) throw new Error("NO_IMG");
 
-      const imgUrl = await uploadToCloudinary(req.file, post.name);
+      const imgUrl = await uploadToCloudinary(req.file, name);
 
       await Cuisine.update(
         { name, description, price, imgUrl, categoryId, authorId },
@@ -141,23 +132,9 @@ class CuisineController {
 
       const postName = post.name;
 
-      if (req.dataUser.role !== "Admin") {
-        if (req.dataUser.id !== post.authorId) {
-          throw new Error("FORBIDDEN");
-        }
-      }
-
       await Cuisine.destroy({ where: { id: id } });
 
       res.status(200).json({ message: `${postName} success to delete` });
-    } catch (error) {
-      next(error);
-    }
-  }
-
-  static async x(req, res, next) {
-    try {
-      res.status(200).json({ x: "hi" });
     } catch (error) {
       next(error);
     }

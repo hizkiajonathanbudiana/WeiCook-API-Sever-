@@ -279,7 +279,7 @@ describe("DELETE /cuisines/:id", () => {
     it("", async () => {
       const response = await request(app)
         .delete("/cuisines/3")
-        .set("Authorization", `Bearer ${tokenAdminOne}`);
+        .set("Authorization", `Bearer ${tokenAdminTwo}`);
       expect(response.status).toBe(200);
       expect(response.body).toHaveProperty("message", expect.any(String));
     });
@@ -289,7 +289,7 @@ describe("DELETE /cuisines/:id", () => {
     it("", async () => {
       const response = await request(app)
         .delete("/cuisines/3")
-        .set("Authorization", `Bearer ${tokenAdminOne}`);
+        .set("Authorization", `Bearer ${tokenAdminTwo}`);
       expect(response.status).toBe(404);
       expect(response.body).toHaveProperty("error", expect.any(String));
     });
