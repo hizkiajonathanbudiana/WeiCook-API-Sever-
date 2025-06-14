@@ -53,7 +53,7 @@ app.use((error, req, res, next) => {
     code = 403;
     msg = "Not Authorized";
   } else if (error.message === "NO_IMG") {
-    code = 599;
+    code = 400;
     msg = "Image is required";
   }
 

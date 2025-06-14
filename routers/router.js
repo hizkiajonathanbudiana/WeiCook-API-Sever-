@@ -12,6 +12,15 @@ const cuisineRouter = require("./cuisineRouter");
 //middlewares
 const { protectorLogin, protectorAdmin } = require("../middlewares/middleware");
 
+//redirect /
+router.get("/", async (req, res, next) => {
+  try {
+    res.redirect("/pub/cuisines");
+  } catch (error) {
+    next(error);
+  }
+});
+
 //login
 router.post("/login", UserController.handleLogin);
 

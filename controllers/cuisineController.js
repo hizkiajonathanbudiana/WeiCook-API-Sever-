@@ -49,7 +49,8 @@ class CuisineController {
       }
 
       if (filter) {
-        options.where.categoryId = { [Op.eq]: filter };
+        const query = filter.split(",").map((el) => +el);
+        options.where.categoryId = { [Op.in]: query };
       }
 
       if (sort === "ASC") {

@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const { protectorPosts, protectorAdmin } = require("../middlewares/middleware");
+const { protectorPosts } = require("../middlewares/middleware");
 //controllers
 const CuisineController = require("../controllers/cuisineController");
 
@@ -11,7 +11,6 @@ const multer = require("multer");
 router.post(
   "/",
   multer({ storage: multer.memoryStorage() }).single("image"),
-  protectorAdmin,
   CuisineController.handleCreatePost
 );
 router.put(
