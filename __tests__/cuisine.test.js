@@ -391,7 +391,7 @@ describe("DELETE /cuisines/:id", () => {
         .set("Authorization", `Bearer FakeToken`);
 
       expect(response.status).toBe(401);
-      expect(response.body).toHaveProperty("message", expect.any(String));
+      expect(response.body).toHaveProperty("error", expect.any(String));
     });
   });
 
