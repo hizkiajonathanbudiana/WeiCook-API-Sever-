@@ -129,9 +129,9 @@ P2-Challenge-1 (Server Side)
 
 ---
 
-### **3. GET /pub/cuisines or /cuisines**
+### **3. GET /pub/cuisines**
 
-**Description:** Displays all cuisine data. This endpoint (/pub/cuisines) is public and does not require authentication. Meanwhile, endpoint (/cuisines) does require authentication.
+**Description:** Displays all cuisine data. This endpoint is public and does not require authentication.
 
 **Request:**
 
@@ -191,9 +191,9 @@ P2-Challenge-1 (Server Side)
 
 ---
 
-### **4. GET /pub/cuisines/:id or /cuisines/:id**
+### **4. GET /pub/cuisines/:id **
 
-**Description:** Displays the details of a single cuisine based on ID. This endpoint(/pub/cuisines/:id) is public. Meanwhile, endpoint (/cuisines) does require authentication.
+**Description:** Displays the details of a single cuisine based on ID. This endpoint is public.
 
 **Request:**
 
@@ -244,7 +244,149 @@ P2-Challenge-1 (Server Side)
 
 ---
 
-### **5. GET /categories**
+### **5. GET /cuisines**
+
+**Description:** Displays all cuisine data. Requires login.
+
+**Request:**
+
+- **Headers:**
+
+  ```json
+  {
+    "Authorization": "Bearer <access_token>"
+  }
+  ```
+
+- **Query Params:**
+
+  - `search` (optional): `string` - Searches for cuisines by name (case-insensitive search).
+  - `filter` (optional): `integer` - Filters cuisines by `categoryId`.
+  - `sort` (optional): `string` - Sorts data by creation date. Options: `ASC` (oldest) or `DESC` (newest).
+  - `page` (optional): `integer` - Page number for pagination. The default is page `1`. The size per page is 10 items.
+
+- **Example Full URL:**
+  ```
+  /pub/cuisines?search=nasi&filter=2&sort=DESC&page=1
+  ```
+
+**Response:**
+
+- **200 - OK**
+  ```json
+  {
+    "total": 22,
+    "size": 10,
+    "totalPage": 3,
+    "currentPage": 1,
+    "data": [
+      {
+        "id": 1,
+        "name": "Bruschetta Classico",
+        "description": "Crispy toasted bread with fresh tomato, garlic, basil, and olive oil toppings.",
+        "price": 45000,
+        "imgUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRestaurant&psig=AOvVaw0Z1OPkwkzfWvavxTF8Vqw9&ust=1749862917146000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPD6rL-Z7Y0DFQAAAAAdAAAAABAE",
+        "categoryId": 1,
+        "authorId": 1,
+        "createdAt": "2025-06-13T13:21:15.420Z",
+        "updatedAt": "2025-06-13T13:21:15.420Z",
+        "User": {
+          "id": 1,
+          "username": "admin_satu",
+          "email": "admin1@mail.com",
+          "role": "Admin",
+          "phoneNumber": "081211112222",
+          "address": "Jl. Merdeka No. 1, Jakarta",
+          "createdAt": "2025-06-13T13:21:15.296Z",
+          "updatedAt": "2025-06-13T13:21:15.296Z"
+        },
+        "Category": {
+          "id": 1,
+          "name": "Appetizer",
+          "createdAt": "2025-06-13T13:21:15.409Z",
+          "updatedAt": "2025-06-13T13:21:15.409Z"
+        }
+      }
+    ]
+  }
+  ```
+- **401 - Unauthorized**
+  ```json
+  {
+    "error": "Invalid token"
+  }
+  ```
+
+---
+
+### **6. GET /cuisines/:id**
+
+**Description:** Displays the details of a single cuisine based on ID. Requires login.
+
+**Request:**
+
+- **Headers:**
+
+  ```json
+  {
+    "Authorization": "Bearer <access_token>"
+  }
+  ```
+
+- **Params:**
+  - `id`: `integer (required)` - ID of the Cuisine.
+
+**Responses:**
+
+- **200 - OK**
+  ```json
+  {
+    "postDetails": {
+      "id": 1,
+      "name": "Bruschetta Classico",
+      "description": "Crispy toasted bread with fresh tomato, garlic, basil, and olive oil toppings.",
+      "price": 45000,
+      "imgUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRestaurant&psig=AOvVaw0Z1OPkwkzfWvavxTF8Vqw9&ust=1749862917146000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPD6rL-Z7Y0DFQAAAAAdAAAAABAE",
+      "categoryId": 1,
+      "authorId": 1,
+      "createdAt": "2025-06-13T13:21:15.420Z",
+      "updatedAt": "2025-06-13T13:21:15.420Z",
+      "User": {
+        "id": 1,
+        "username": "admin_satu",
+        "email": "admin1@mail.com",
+        "role": "Admin",
+        "phoneNumber": "081211112222",
+        "address": "Jl. Merdeka No. 1, Jakarta",
+        "createdAt": "2025-06-13T13:21:15.296Z",
+        "updatedAt": "2025-06-13T13:21:15.296Z"
+      },
+      "Category": {
+        "id": 1,
+        "name": "Appetizer",
+        "createdAt": "2025-06-13T13:21:15.409Z",
+        "updatedAt": "2025-06-13T13:21:15.409Z"
+      }
+    }
+  }
+  ```
+- **404 - Not Found**
+  _Occurs if the Cuisine with the given `id` is not found._
+  ```json
+  {
+    "error": "Data not found"
+  }
+  ```
+- **401 - Unauthorized**
+  ```json
+  {
+    "error": "Invalid token"
+  }
+  ```
+
+---
+
+### **7. GET /categories**
 
 **Description:** Displays all cuisine categories. Requires login.
 
@@ -287,7 +429,7 @@ P2-Challenge-1 (Server Side)
 
 ---
 
-### **6. POST /categories**
+### **8. POST /categories**
 
 **Description:** Creates a new category. Requires login.
 
@@ -335,7 +477,7 @@ P2-Challenge-1 (Server Side)
 
 ---
 
-### **7. PUT /categories/:id**
+### **9. PUT /categories/:id**
 
 **Description:** Updates category data by ID. Requires login.
 
@@ -390,7 +532,7 @@ P2-Challenge-1 (Server Side)
 
 ---
 
-### **8. DELETE /categories/:id**
+### **10. DELETE /categories/:id**
 
 **Description:** Deletes a category by ID. Requires login.
 
@@ -428,7 +570,7 @@ P2-Challenge-1 (Server Side)
 
 ---
 
-### **9. POST /cuisines**
+### **11. POST /cuisines**
 
 **Description:** Creates new cuisine data. Can only be accessed by `Admin`.
 
@@ -494,7 +636,7 @@ P2-Challenge-1 (Server Side)
 
 ---
 
-### **10. PUT /cuisines/:id**
+### **12. PUT /cuisines/:id**
 
 **Description:** Updates cuisine data by ID. Can only be accessed by `Admin` or the creator of the cuisine (`Staff` concerned).
 
@@ -554,7 +696,7 @@ P2-Challenge-1 (Server Side)
 
 ---
 
-### **11. DELETE /cuisines/:id**
+### **13. DELETE /cuisines/:id**
 
 **Description:** Deletes cuisine data by ID. Can only be accessed by `Admin` or its creator.
 
@@ -598,7 +740,7 @@ P2-Challenge-1 (Server Side)
 
 ---
 
-### **12. PATCH /cuisines/:id**
+### **14. PATCH /cuisines/:id**
 
 **Description:** Updates the cuisine image by ID. Can only be accessed by `Admin` or its creator.
 
