@@ -9,11 +9,6 @@ const { User } = require("../models");
 class UserController {
   static async handleRegister(req, res, next) {
     try {
-      // console.log(req.body);
-      if (req.dataUser.role !== "Admin") throw new Error("FORBIDDEN");
-      if (req.dataUser.role !== "Admin") {
-        throw new Error("FORBIDDEN");
-      }
       const { username, email, password, phoneNumber, address } = req.body;
 
       const response = await User.create({
