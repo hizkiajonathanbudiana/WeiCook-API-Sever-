@@ -8,6 +8,8 @@ const CuisineController = require("../controllers/cuisineController");
 const multer = require("multer");
 
 //cuisine
+router.get("/", CuisineController.showPost);
+router.get("/:id", CuisineController.showPostDetails);
 router.post(
   "/",
   multer({ storage: multer.memoryStorage() }).single("image"),
