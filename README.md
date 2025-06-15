@@ -62,6 +62,7 @@ P2-Challenge-1 (Server Side)
   ```
 - **400 - Bad Request (Validation Error)**
   _The error message will be an array containing all failed validations from the model._
+
   ```json
   {
     "error": [
@@ -73,13 +74,7 @@ P2-Challenge-1 (Server Side)
     ]
   }
   ```
-- **401 - Unauthorized**
-  _Occurs if the token is invalid or not sent._
-  ```json
-  {
-    "error": "Invalid token"
-  }
-  ```
+
 - **403 - Forbidden**
   _Occurs if the accessing user is not an `Admin`._
   ```json
@@ -191,7 +186,7 @@ P2-Challenge-1 (Server Side)
 
 ---
 
-### **4. GET /pub/cuisines/:id **
+### **4. GET /pub/cuisines/:id**
 
 **Description:** Displays the details of a single cuisine based on ID. This endpoint is public.
 
@@ -310,12 +305,6 @@ P2-Challenge-1 (Server Side)
     ]
   }
   ```
-- **401 - Unauthorized**
-  ```json
-  {
-    "error": "Invalid token"
-  }
-  ```
 
 ---
 
@@ -377,12 +366,6 @@ P2-Challenge-1 (Server Side)
     "error": "Data not found"
   }
   ```
-- **401 - Unauthorized**
-  ```json
-  {
-    "error": "Invalid token"
-  }
-  ```
 
 ---
 
@@ -418,12 +401,6 @@ P2-Challenge-1 (Server Side)
         "updatedAt": "2025-06-13T13:21:15.409Z"
       }
     ]
-  }
-  ```
-- **401 - Unauthorized**
-  ```json
-  {
-    "error": "Invalid token"
   }
   ```
 
@@ -468,12 +445,6 @@ P2-Challenge-1 (Server Side)
     "error": ["Category cant empty"]
   }
   ```
-- **401 - Unauthorized**
-  ```json
-  {
-    "error": "Invalid token"
-  }
-  ```
 
 ---
 
@@ -512,17 +483,13 @@ P2-Challenge-1 (Server Side)
   }
   ```
 - **404 - Not Found**
+
   ```json
   {
     "error": "Data not found"
   }
   ```
-- **401 - Unauthorized**
-  ```json
-  {
-    "error": "Invalid token"
-  }
-  ```
+
 - **403 - Forbidden**
   ```json
   {
@@ -559,12 +526,6 @@ P2-Challenge-1 (Server Side)
   ```json
   {
     "error": "Data not found"
-  }
-  ```
-- **401 - Unauthorized**
-  ```json
-  {
-    "error": "Invalid token"
   }
   ```
 
@@ -627,13 +588,6 @@ P2-Challenge-1 (Server Side)
   }
   ```
 
-- **401 - Unauthorized**
-  ```json
-  {
-    "error": "Invalid token"
-  }
-  ```
-
 ---
 
 ### **12. PUT /cuisines/:id**
@@ -687,12 +641,6 @@ P2-Challenge-1 (Server Side)
     "error": "Not Authorized"
   }
   ```
-- **401 - Unauthorized**
-  ```json
-  {
-    "error": "Invalid token"
-  }
-  ```
 
 ---
 
@@ -729,12 +677,6 @@ P2-Challenge-1 (Server Side)
   ```json
   {
     "error": "Not Authorized"
-  }
-  ```
-- **401 - Unauthorized**
-  ```json
-  {
-    "error": "Invalid token"
   }
   ```
 
@@ -783,18 +725,21 @@ P2-Challenge-1 (Server Side)
     "error": "Not Authorized"
   }
   ```
-- **401 - Unauthorized**
-  ```json
-  {
-    "error": "Invalid token"
-  }
-  ```
 
 ---
 
 ## Global Errors
 
 The following errors can occur globally on many endpoints.
+
+- **401 - Unauthorized**
+  _Occurs if the token is invalid or not sent._
+
+  ```json
+  {
+    "error": "Invalid token"
+  }
+  ```
 
 - **500 - Internal Server Error**
   _Occurs if there is an unexpected error on the server._
