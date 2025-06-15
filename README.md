@@ -129,9 +129,9 @@ P2-Challenge-1 (Server Side)
 
 ---
 
-### **3. GET /pub/cuisines**
+### **3. GET /pub/cuisines or /cuisines**
 
-**Description:** Displays all cuisine data. This endpoint is public and does not require authentication.
+**Description:** Displays all cuisine data. This endpoint (/pub/cuisines) is public and does not require authentication. Meanwhile, endpoint (/cuisines) does require authentication.
 
 **Request:**
 
@@ -191,9 +191,9 @@ P2-Challenge-1 (Server Side)
 
 ---
 
-### **4. GET /pub/cuisines/:id**
+### **4. GET /pub/cuisines/:id or /cuisines/:id**
 
-**Description:** Displays the details of a single cuisine based on ID. This endpoint is public.
+**Description:** Displays the details of a single cuisine based on ID. This endpoint(/pub/cuisines/:id) is public. Meanwhile, endpoint (/cuisines) does require authentication.
 
 **Request:**
 
