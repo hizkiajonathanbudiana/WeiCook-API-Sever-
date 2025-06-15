@@ -734,12 +734,7 @@ P2-Challenge-1 (Server Side)
 
 **Request:**
 
-- **Headers:**
-  ```json
-  {
-    "Authorization": "Bearer <access_token>"
-  }
-  ```
+Does not require.
 
 **Response:**
 
