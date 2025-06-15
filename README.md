@@ -188,7 +188,7 @@ P2-Challenge-1 (Server Side)
 
 ### **4. GET /pub/cuisines/:id**
 
-**Description:** Displays the details of a single cuisine based on ID. This endpoint is public.
+**Description:** Displays the details of a single cuisine based on ID. This endpoint is public and does not require authentication.
 
 **Request:**
 
@@ -723,6 +723,43 @@ P2-Challenge-1 (Server Side)
   ```json
   {
     "error": "Not Authorized"
+  }
+  ```
+
+---
+
+### **15. GET /pub/categories**
+
+**Description:** Displays all cuisine categories. This endpoint is public and does not require authentication.
+
+**Request:**
+
+- **Headers:**
+  ```json
+  {
+    "Authorization": "Bearer <access_token>"
+  }
+  ```
+
+**Response:**
+
+- **200 - OK**
+  ```json
+  {
+    "categories": [
+      {
+        "id": 1,
+        "name": "Appetizer",
+        "createdAt": "2025-06-13T13:21:15.409Z",
+        "updatedAt": "2025-06-13T13:21:15.409Z"
+      },
+      {
+        "id": 2,
+        "name": "Main Course",
+        "createdAt": "2025-06-13T13:21:15.409Z",
+        "updatedAt": "2025-06-13T13:21:15.409Z"
+      }
+    ]
   }
   ```
 
