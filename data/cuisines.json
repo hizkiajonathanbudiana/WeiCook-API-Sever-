@@ -1,522 +1,982 @@
 [
   {
     "name": "Bruschetta Classico",
-    "description": "Roti panggang renyah dengan topping tomat segar, bawang putih, kemangi, dan minyak zaitun.",
+    "description": "Crispy grilled bread topped with fresh tomatoes, garlic, basil, and olive oil.",
     "price": 45000,
     "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 1,
     "authorId": 1,
-    "createdAt": "2025-01-02T21:24:38.000000Z",
-    "updatedAt": "2025-01-02T21:24:38.000000Z"
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z"
   },
   {
-    "name": "Nasi Goreng Seafood",
-    "description": "Nasi goreng spesial dengan campuran udang segar, cumi, dan telur mata sapi.",
+    "name": "Seafood Fried Rice",
+    "description": "Special fried rice with fresh shrimp, squid, and a sunny-side-up egg.",
     "price": 65000,
     "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 2,
     "authorId": 2,
-    "createdAt": "2025-01-04T14:20:56.000000Z",
-    "updatedAt": "2025-01-04T14:20:56.000000Z"
+    "createdAt": "2025-01-02T18:33:24.113402Z",
+    "updatedAt": "2025-01-02T18:33:24.113402Z"
   },
   {
     "name": "Spaghetti Carbonara",
-    "description": "Pasta spaghetti dengan saus krim, keju parmesan, dan potongan daging asap.",
+    "description": "Spaghetti pasta in a creamy sauce with Parmesan cheese and bacon.",
     "price": 85000,
     "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 5,
     "authorId": 3,
-    "createdAt": "2025-01-06T12:04:10.000000Z",
-    "updatedAt": "2025-01-06T12:04:10.000000Z"
+    "createdAt": "2025-01-04T13:06:48.226804Z",
+    "updatedAt": "2025-01-04T13:06:48.226804Z"
   },
   {
-    "name": "Lava Cake Chocolate",
-    "description": "Kue coklat hangat dengan lelehan coklat di dalamnya, disajikan dengan es krim vanila.",
+    "name": "Chocolate Lava Cake",
+    "description": "Warm chocolate cake with a molten chocolate center, served with vanilla ice cream.",
     "price": 55000,
     "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 3,
     "authorId": 4,
-    "createdAt": "2025-01-07T09:46:50.000000Z",
-    "updatedAt": "2025-01-07T09:46:50.000000Z"
+    "createdAt": "2025-01-06T07:40:12.340206Z",
+    "updatedAt": "2025-01-06T07:40:12.340206Z"
   },
   {
     "name": "Lemon Iced Tea",
-    "description": "Es teh manis dengan perasan lemon segar.",
+    "description": "Sweet iced tea with a squeeze of fresh lemon.",
     "price": 25000,
     "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 4,
     "authorId": 5,
-    "createdAt": "2025-01-11T02:40:54.000000Z",
-    "updatedAt": "2025-01-11T02:40:54.000000Z"
+    "createdAt": "2025-01-08T02:13:36.453608Z",
+    "updatedAt": "2025-01-08T02:13:36.453608Z"
   },
   {
     "name": "Caesar Salad with Grilled Chicken",
-    "description": "Salad klasik dengan selada romaine, crouton, keju parmesan, dan potongan ayam panggang.",
+    "description": "Classic salad with romaine lettuce, croutons, Parmesan cheese, and grilled chicken.",
     "price": 75000,
     "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 6,
     "authorId": 1,
-    "createdAt": "2025-01-19T19:28:11.000000Z",
-    "updatedAt": "2025-01-19T19:28:11.000000Z"
+    "createdAt": "2025-01-09T20:47:00.567010Z",
+    "updatedAt": "2025-01-09T20:47:00.567010Z"
   },
   {
     "name": "Beef Rendang",
-    "description": "Daging sapi yang dimasak perlahan dengan rempah-rempah khas Minang hingga empuk.",
+    "description": "Slow-cooked beef in a rich, spicy Minang-style coconut gravy.",
     "price": 95000,
     "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 2,
     "authorId": 2,
-    "createdAt": "2025-01-21T14:24:51.000000Z",
-    "updatedAt": "2025-01-21T14:24:51.000000Z"
+    "createdAt": "2025-01-11T15:20:24.680412Z",
+    "updatedAt": "2025-01-11T15:20:24.680412Z"
   },
   {
     "name": "Fettuccine Alfredo",
-    "description": "Pasta fettuccine dengan saus alfredo klasik yang creamy dan kaya rasa.",
+    "description": "Fettuccine pasta in a classic creamy Alfredo sauce.",
     "price": 80000,
     "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 5,
     "authorId": 3,
-    "createdAt": "2025-01-22T03:09:00.000000Z",
-    "updatedAt": "2025-01-22T03:09:00.000000Z"
+    "createdAt": "2025-01-13T09:53:48.793814Z",
+    "updatedAt": "2025-01-13T09:53:48.793814Z"
   },
   {
     "name": "Panna Cotta",
-    "description": "Dessert krim manis khas Italia dengan saus stroberi.",
+    "description": "Italian creamy dessert served with strawberry sauce.",
     "price": 50000,
     "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 3,
     "authorId": 4,
-    "createdAt": "2025-01-22T06:36:34.000000Z",
-    "updatedAt": "2025-01-22T06:36:34.000000Z"
+    "createdAt": "2025-01-15T04:27:12.907216Z",
+    "updatedAt": "2025-01-15T04:27:12.907216Z"
   },
   {
     "name": "Spring Rolls",
-    "description": "Lumpia goreng renyah dengan isian sayuran dan ayam.",
+    "description": "Crispy fried rolls filled with vegetables and chicken.",
     "price": 40000,
     "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 1,
     "authorId": 5,
-    "createdAt": "2025-01-28T08:16:42.000000Z",
-    "updatedAt": "2025-01-28T08:16:42.000000Z"
+    "createdAt": "2025-01-16T23:00:37.020618Z",
+    "updatedAt": "2025-01-16T23:00:37.020618Z"
   },
   {
-    "name": "Sop Buntut",
-    "description": "Sop buntut sapi legendaris dengan kuah bening yang kaya rempah.",
+    "name": "Oxtail Soup",
+    "description": "Legendary beef oxtail soup in a clear, aromatic broth.",
     "price": 110000,
     "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 2,
     "authorId": 1,
-    "createdAt": "2025-01-30T01:59:59.000000Z",
-    "updatedAt": "2025-01-30T01:59:59.000000Z"
+    "createdAt": "2025-01-18T17:34:01.134020Z",
+    "updatedAt": "2025-01-18T17:34:01.134020Z"
   },
   {
     "name": "Avocado Juice",
-    "description": "Jus alpukat segar dengan susu kental manis coklat.",
+    "description": "Fresh avocado juice with condensed milk and chocolate.",
     "price": 35000,
     "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 4,
     "authorId": 2,
-    "createdAt": "2025-02-03T03:28:10.000000Z",
-    "updatedAt": "2025-02-03T03:28:10.000000Z"
+    "createdAt": "2025-01-20T12:07:25.247422Z",
+    "updatedAt": "2025-01-20T12:07:25.247422Z"
   },
   {
     "name": "Salmon Teriyaki",
-    "description": "Potongan salmon segar yang dipanggang dengan saus teriyaki manis dan gurih.",
+    "description": "Grilled salmon glazed with sweet and savory teriyaki sauce.",
     "price": 125000,
     "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 2,
     "authorId": 3,
-    "createdAt": "2025-02-06T17:45:03.000000Z",
-    "updatedAt": "2025-02-06T17:45:03.000000Z"
+    "createdAt": "2025-01-22T06:40:49.360824Z",
+    "updatedAt": "2025-01-22T06:40:49.360824Z"
   },
   {
     "name": "Calamari Rings",
-    "description": "Cincin cumi yang digoreng renyah disajikan dengan saus tartar.",
+    "description": "Crispy fried squid rings served with tartar sauce.",
     "price": 50000,
     "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 1,
     "authorId": 4,
-    "createdAt": "2025-02-11T05:43:23.000000Z",
-    "updatedAt": "2025-02-11T05:43:23.000000Z"
+    "createdAt": "2025-01-24T01:14:13.474226Z",
+    "updatedAt": "2025-01-24T01:14:13.474226Z"
   },
   {
     "name": "Lasagna al Forno",
-    "description": "Lapisan pasta, saus daging bolognese, saus bechamel, dan keju mozzarella yang dipanggang.",
+    "description": "Layers of pasta, Bolognese sauce, b\u00e9chamel, and mozzarella baked to perfection.",
     "price": 90000,
     "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 5,
     "authorId": 5,
-    "createdAt": "2025-02-14T13:52:50.000000Z",
-    "updatedAt": "2025-02-14T13:52:50.000000Z"
+    "createdAt": "2025-01-25T19:47:37.587628Z",
+    "updatedAt": "2025-01-25T19:47:37.587628Z"
   },
   {
     "name": "Tiramisu",
-    "description": "Dessert kopi khas Italia dengan lapisan biskuit ladyfinger, mascarpone, dan taburan bubuk kakao.",
+    "description": "Classic Italian coffee-flavored dessert with ladyfingers and mascarpone.",
     "price": 60000,
     "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 3,
     "authorId": 1,
-    "createdAt": "2025-02-16T05:43:48.000000Z",
-    "updatedAt": "2025-02-16T05:43:48.000000Z"
+    "createdAt": "2025-01-27T14:21:01.701030Z",
+    "updatedAt": "2025-01-27T14:21:01.701030Z"
   },
   {
     "name": "Greek Salad",
-    "description": "Salad segar dengan tomat, timun, bawang bombay, zaitun, dan keju feta.",
+    "description": "Fresh salad with tomatoes, cucumbers, red onions, olives, and feta cheese.",
     "price": 65000,
     "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 6,
     "authorId": 2,
-    "createdAt": "2025-02-26T11:29:58.000000Z",
-    "updatedAt": "2025-02-26T11:29:58.000000Z"
+    "createdAt": "2025-01-29T08:54:25.814432Z",
+    "updatedAt": "2025-01-29T08:54:25.814432Z"
   },
   {
-    "name": "Iga Bakar Madu",
-    "description": "Iga sapi empuk yang dibakar dengan olesan saus madu manis pedas.",
+    "name": "Honey-Glazed Ribs",
+    "description": "Tender beef ribs grilled with a sweet and spicy honey glaze.",
     "price": 115000,
     "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 2,
     "authorId": 3,
-    "createdAt": "2025-02-28T11:44:56.000000Z",
-    "updatedAt": "2025-02-28T11:44:56.000000Z"
+    "createdAt": "2025-01-31T03:27:49.927834Z",
+    "updatedAt": "2025-01-31T03:27:49.927834Z"
   },
   {
     "name": "Chicken Gyoza",
-    "description": "Pangsit Jepang dengan isian ayam dan sayuran, bisa digoreng atau dikukus.",
+    "description": "Japanese dumplings filled with chicken and vegetables, fried or steamed.",
     "price": 48000,
     "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 1,
     "authorId": 4,
-    "createdAt": "2025-03-07T06:53:55.000000Z",
-    "updatedAt": "2025-03-07T06:53:55.000000Z"
+    "createdAt": "2025-02-01T22:01:14.041236Z",
+    "updatedAt": "2025-02-01T22:01:14.041236Z"
   },
   {
     "name": "Fresh Orange Juice",
-    "description": "Jus jeruk peras murni tanpa tambahan gula.",
+    "description": "100% pure squeezed orange juice, no added sugar.",
     "price": 30000,
     "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 4,
     "authorId": 5,
-    "createdAt": "2025-03-08T09:29:11.000000Z",
-    "updatedAt": "2025-03-08T09:29:11.000000Z"
+    "createdAt": "2025-02-03T16:34:38.154638Z",
+    "updatedAt": "2025-02-03T16:34:38.154638Z"
   },
   {
-    "name": "Ayam Bakar Taliwang",
-    "description": "Ayam bakar pedas khas Lombok dengan bumbu rempah yang meresap.",
+    "name": "Taliwang Grilled Chicken",
+    "description": "Spicy Lombok-style grilled chicken with authentic spices.",
     "price": 78000,
     "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 2,
     "authorId": 1,
-    "createdAt": "2025-03-13T03:04:07.000000Z",
-    "updatedAt": "2025-03-13T03:04:07.000000Z"
+    "createdAt": "2025-02-05T11:08:02.268040Z",
+    "updatedAt": "2025-02-05T11:08:02.268040Z"
   },
   {
     "name": "Cappuccino",
-    "description": "Espresso dengan steamed milk dan busa susu tebal.",
+    "description": "Espresso with steamed milk and thick milk foam.",
     "price": 38000,
     "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 4,
     "authorId": 2,
-    "createdAt": "2025-03-19T01:51:52.000000Z",
-    "updatedAt": "2025-03-19T01:51:52.000000Z"
+    "createdAt": "2025-02-07T05:41:26.381442Z",
+    "updatedAt": "2025-02-07T05:41:26.381442Z"
   },
   {
     "name": "Mozzarella Sticks",
-    "description": "Keju mozzarella yang dilapisi tepung panir dan digoreng hingga renyah.",
+    "description": "Battered and fried mozzarella cheese sticks.",
     "price": 40000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 1,
     "authorId": 1,
-    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
-    "createdAt": "2025-03-20T18:40:12.000000Z",
-    "updatedAt": "2025-03-20T18:40:12.000000Z"
+    "createdAt": "2025-02-09T00:14:50.494844Z",
+    "updatedAt": "2025-02-09T00:14:50.494844Z"
   },
   {
-    "name": "Chicken Wings Spicy",
-    "description": "Sayap ayam dengan bumbu pedas khas.",
+    "name": "Spicy Chicken Wings",
+    "description": "Chicken wings coated in a fiery spice mix.",
     "price": 55000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 1,
     "authorId": 2,
-    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
-    "createdAt": "2025-03-20T20:32:42.000000Z",
-    "updatedAt": "2025-03-20T20:32:42.000000Z"
+    "createdAt": "2025-02-10T18:48:14.608246Z",
+    "updatedAt": "2025-02-10T18:48:14.608246Z"
   },
   {
     "name": "Stuffed Mushrooms",
-    "description": "Jamur isi keju dan rempah yang dipanggang.",
+    "description": "Baked mushrooms stuffed with cheese and herbs.",
     "price": 45000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 1,
     "authorId": 3,
-    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
-    "createdAt": "2025-03-23T06:59:11.000000Z",
-    "updatedAt": "2025-03-23T06:59:11.000000Z"
+    "createdAt": "2025-02-12T13:21:38.721648Z",
+    "updatedAt": "2025-02-12T13:21:38.721648Z"
   },
   {
     "name": "Garlic Bread",
-    "description": "Roti panggang dengan olesan mentega bawang putih.",
+    "description": "Toasted bread with garlic butter spread.",
     "price": 30000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 1,
     "authorId": 4,
-    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
-    "createdAt": "2025-03-25T03:51:58.000000Z",
-    "updatedAt": "2025-03-25T03:51:58.000000Z"
+    "createdAt": "2025-02-14T07:55:02.835050Z",
+    "updatedAt": "2025-02-14T07:55:02.835050Z"
   },
   {
     "name": "Nachos Supreme",
-    "description": "Keripik jagung dengan topping keju, daging cincang, dan jalapeno.",
+    "description": "Corn chips topped with cheese, beef, and jalape\u00f1os.",
     "price": 60000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 1,
     "authorId": 5,
-    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
-    "createdAt": "2025-03-28T20:43:20.000000Z",
-    "updatedAt": "2025-03-28T20:43:20.000000Z"
+    "createdAt": "2025-02-16T02:28:26.948452Z",
+    "updatedAt": "2025-02-16T02:28:26.948452Z"
   },
   {
-    "name": "Sate Ayam",
-    "description": "Tusuk sate ayam dengan bumbu kacang khas.",
+    "name": "Chicken Satay",
+    "description": "Grilled chicken skewers served with peanut sauce.",
     "price": 70000,
-    "categoryId": 2,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 1,
     "authorId": 1,
-    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
-    "createdAt": "2025-03-29T05:21:00.000000Z",
-    "updatedAt": "2025-03-29T05:21:00.000000Z"
-  },
-  {
-    "name": "Grilled Lamb Chops",
-    "description": "Iga domba panggang dengan bumbu rosemary.",
-    "price": 120000,
-    "categoryId": 2,
-    "authorId": 2,
-    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
-    "createdAt": "2025-03-30T03:07:22.000000Z",
-    "updatedAt": "2025-03-30T03:07:22.000000Z"
-  },
-  {
-    "name": "Fish and Chips",
-    "description": "Ikan goreng tepung dengan kentang goreng renyah.",
-    "price": 85000,
-    "categoryId": 2,
-    "authorId": 3,
-    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
-    "createdAt": "2025-04-02T05:34:34.000000Z",
-    "updatedAt": "2025-04-02T05:34:34.000000Z"
+    "createdAt": "2025-02-17T21:01:51.061854Z",
+    "updatedAt": "2025-02-17T21:01:51.061854Z"
   },
   {
     "name": "Beef Burger Deluxe",
-    "description": "Burger daging sapi dengan keju cheddar, selada, dan saus spesial.",
+    "description": "Beef burger with cheddar cheese, lettuce, and special sauce.",
     "price": 90000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 2,
     "authorId": 4,
-    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
-    "createdAt": "2025-04-02T18:18:38.000000Z",
-    "updatedAt": "2025-04-02T18:18:38.000000Z"
+    "createdAt": "2025-02-19T15:35:15.175256Z",
+    "updatedAt": "2025-02-19T15:35:15.175256Z"
   },
   {
     "name": "Vegetarian Curry",
-    "description": "Kari sayuran berbumbu rempah khas.",
+    "description": "Mixed vegetable curry simmered in spiced coconut milk.",
     "price": 80000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 2,
     "authorId": 5,
-    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
-    "createdAt": "2025-04-03T14:19:42.000000Z",
-    "updatedAt": "2025-04-03T14:19:42.000000Z"
+    "createdAt": "2025-02-21T10:08:39.288658Z",
+    "updatedAt": "2025-02-21T10:08:39.288658Z"
   },
   {
     "name": "Chocolate Brownie",
-    "description": "Brownie coklat lembut dengan kacang kenari.",
+    "description": "Soft chocolate brownie with walnuts.",
     "price": 45000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 3,
     "authorId": 1,
-    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
-    "createdAt": "2025-04-05T01:10:53.000000Z",
-    "updatedAt": "2025-04-05T01:10:53.000000Z"
+    "createdAt": "2025-02-23T04:42:03.402060Z",
+    "updatedAt": "2025-02-23T04:42:03.402060Z"
   },
   {
     "name": "Cheesecake",
-    "description": "Kue keju lembut dengan crust graham cracker.",
+    "description": "Creamy cheesecake on a graham cracker crust.",
     "price": 65000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 3,
     "authorId": 2,
-    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
-    "createdAt": "2025-04-06T03:49:42.000000Z",
-    "updatedAt": "2025-04-06T03:49:42.000000Z"
+    "createdAt": "2025-02-24T23:15:27.515462Z",
+    "updatedAt": "2025-02-24T23:15:27.515462Z"
   },
   {
     "name": "Banana Split",
-    "description": "Es krim dengan potongan pisang dan topping saus coklat.",
+    "description": "Ice cream with banana slices and chocolate sauce.",
     "price": 55000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 3,
     "authorId": 3,
-    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
-    "createdAt": "2025-04-12T04:46:59.000000Z",
-    "updatedAt": "2025-04-12T04:46:59.000000Z"
+    "createdAt": "2025-02-26T17:48:51.628864Z",
+    "updatedAt": "2025-02-26T17:48:51.628864Z"
   },
   {
     "name": "Creme Brulee",
-    "description": "Puding krim dengan lapisan gula karamel renyah.",
+    "description": "Rich custard topped with caramelized sugar.",
     "price": 60000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 3,
     "authorId": 4,
-    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
-    "createdAt": "2025-04-21T03:14:23.000000Z",
-    "updatedAt": "2025-04-21T03:14:23.000000Z"
+    "createdAt": "2025-02-28T12:22:15.742266Z",
+    "updatedAt": "2025-02-28T12:22:15.742266Z"
   },
   {
     "name": "Mango Sorbet",
-    "description": "Sorbet mangga segar tanpa krim.",
+    "description": "Refreshing mango sorbet without cream.",
     "price": 40000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 3,
     "authorId": 5,
-    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
-    "createdAt": "2025-04-29T10:01:06.000000Z",
-    "updatedAt": "2025-04-29T10:01:06.000000Z"
+    "createdAt": "2025-03-02T06:55:39.855668Z",
+    "updatedAt": "2025-03-02T06:55:39.855668Z"
   },
   {
     "name": "Mango Smoothie",
-    "description": "Smoothie mangga dengan yogurt dan madu.",
+    "description": "Blend of mango, yogurt, and honey.",
     "price": 35000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 4,
     "authorId": 1,
-    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
-    "createdAt": "2025-05-04T02:05:40.000000Z",
-    "updatedAt": "2025-05-04T02:05:40.000000Z"
+    "createdAt": "2025-03-04T01:29:03.969070Z",
+    "updatedAt": "2025-03-04T01:29:03.969070Z"
   },
   {
     "name": "Iced Coffee Latte",
-    "description": "Kopi susu dingin dengan es batu.",
+    "description": "Cold coffee with milk and ice.",
     "price": 38000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 4,
     "authorId": 2,
-    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
-    "createdAt": "2025-05-07T22:58:45.000000Z",
-    "updatedAt": "2025-05-07T22:58:45.000000Z"
+    "createdAt": "2025-03-05T20:02:28.082472Z",
+    "updatedAt": "2025-03-05T20:02:28.082472Z"
   },
   {
     "name": "Matcha Latte",
-    "description": "Minuman matcha dengan susu hangat.",
+    "description": "Green tea latte made with high-quality matcha.",
     "price": 45000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 4,
     "authorId": 3,
-    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
-    "createdAt": "2025-05-08T12:11:32.000000Z",
-    "updatedAt": "2025-05-08T12:11:32.000000Z"
+    "createdAt": "2025-03-07T14:35:52.195874Z",
+    "updatedAt": "2025-03-07T14:35:52.195874Z"
   },
   {
     "name": "Chocolate Milkshake",
-    "description": "Milkshake coklat kental dengan whipped cream.",
+    "description": "Thick chocolate milkshake topped with whipped cream.",
     "price": 48000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 4,
     "authorId": 4,
-    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
-    "createdAt": "2025-05-13T07:50:58.000000Z",
-    "updatedAt": "2025-05-13T07:50:58.000000Z"
+    "createdAt": "2025-03-09T09:09:16.309276Z",
+    "updatedAt": "2025-03-09T09:09:16.309276Z"
   },
   {
     "name": "Green Tea",
-    "description": "Teh hijau panas atau dingin sesuai pilihan.",
+    "description": "Hot or cold green tea, your choice.",
     "price": 25000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 4,
     "authorId": 5,
-    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
-    "createdAt": "2025-05-13T10:54:37.000000Z",
-    "updatedAt": "2025-05-13T10:54:37.000000Z"
+    "createdAt": "2025-03-11T03:42:40.422678Z",
+    "updatedAt": "2025-03-11T03:42:40.422678Z"
   },
   {
     "name": "Penne Arrabiata",
-    "description": "Pasta penne dengan saus tomat pedas.",
+    "description": "Penne pasta in a spicy tomato sauce.",
     "price": 80000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 5,
     "authorId": 1,
-    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
-    "createdAt": "2025-05-14T00:11:59.000000Z",
-    "updatedAt": "2025-05-14T00:11:59.000000Z"
+    "createdAt": "2025-03-12T22:16:04.536080Z",
+    "updatedAt": "2025-03-12T22:16:04.536080Z"
   },
   {
-    "name": "Ravioli Spinach Ricotta",
-    "description": "Ravioli isi bayam dan keju ricotta.",
+    "name": "Spinach Ricotta Ravioli",
+    "description": "Ravioli stuffed with spinach and ricotta cheese.",
     "price": 90000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 5,
     "authorId": 2,
-    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
-    "createdAt": "2025-05-19T01:29:34.000000Z",
-    "updatedAt": "2025-05-19T01:29:34.000000Z"
+    "createdAt": "2025-03-14T16:49:28.649482Z",
+    "updatedAt": "2025-03-14T16:49:28.649482Z"
   },
   {
-    "name": "Gnocchi al Pesto",
-    "description": "Gnocchi kentang dengan saus pesto.",
+    "name": "Potato Gnocchi with Pesto",
+    "description": "Potato gnocchi served with basil pesto.",
     "price": 85000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 5,
     "authorId": 3,
-    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
-    "createdAt": "2025-05-26T03:04:23.000000Z",
-    "updatedAt": "2025-05-26T03:04:23.000000Z"
+    "createdAt": "2025-03-16T11:22:52.762884Z",
+    "updatedAt": "2025-03-16T11:22:52.762884Z"
   },
   {
     "name": "Spaghetti Aglio e Olio",
-    "description": "Spaghetti dengan minyak zaitun, bawang putih, dan cabai.",
+    "description": "Spaghetti with olive oil, garlic, and chili flakes.",
     "price": 78000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 5,
     "authorId": 4,
-    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
-    "createdAt": "2025-05-28T09:38:57.000000Z",
-    "updatedAt": "2025-05-28T09:38:57.000000Z"
+    "createdAt": "2025-03-18T05:56:16.876286Z",
+    "updatedAt": "2025-03-18T05:56:16.876286Z"
   },
   {
     "name": "Mac and Cheese",
-    "description": "Pasta makaroni dengan saus keju creamy.",
+    "description": "Macaroni pasta in a creamy cheese sauce.",
     "price": 75000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 5,
     "authorId": 5,
-    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
-    "createdAt": "2025-05-29T03:30:45.000000Z",
-    "updatedAt": "2025-05-29T03:30:45.000000Z"
+    "createdAt": "2025-03-20T00:29:40.989688Z",
+    "updatedAt": "2025-03-20T00:29:40.989688Z"
   },
   {
     "name": "Tuna Salad",
-    "description": "Salad dengan tuna, selada, dan dressing lemon.",
+    "description": "Salad with tuna, lettuce, and lemon dressing.",
     "price": 65000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 6,
     "authorId": 1,
-    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
-    "createdAt": "2025-05-29T16:57:37.000000Z",
-    "updatedAt": "2025-05-29T16:57:37.000000Z"
+    "createdAt": "2025-03-21T19:03:05.103090Z",
+    "updatedAt": "2025-03-21T19:03:05.103090Z"
   },
   {
     "name": "Quinoa Salad",
-    "description": "Salad quinoa dengan sayuran segar.",
+    "description": "Quinoa mixed with fresh vegetables.",
     "price": 70000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 6,
     "authorId": 2,
-    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
-    "createdAt": "2025-05-30T06:46:38.000000Z",
-    "updatedAt": "2025-05-30T06:46:38.000000Z"
+    "createdAt": "2025-03-23T13:36:29.216492Z",
+    "updatedAt": "2025-03-23T13:36:29.216492Z"
   },
   {
     "name": "Caprese Salad",
-    "description": "Tomat, mozzarella, dan basil dengan minyak zaitun.",
+    "description": "Tomatoes, mozzarella, and basil drizzled with olive oil.",
     "price": 60000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 6,
     "authorId": 3,
-    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
-    "createdAt": "2025-06-04T22:04:35.000000Z",
-    "updatedAt": "2025-06-04T22:04:35.000000Z"
+    "createdAt": "2025-03-25T08:09:53.329894Z",
+    "updatedAt": "2025-03-25T08:09:53.329894Z"
   },
   {
     "name": "Kale Caesar Salad",
-    "description": "Salad kale dengan saus caesar dan crouton.",
+    "description": "Kale leaves tossed in Caesar dressing with croutons.",
     "price": 68000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 6,
     "authorId": 4,
-    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
-    "createdAt": "2025-06-11T04:11:17.000000Z",
-    "updatedAt": "2025-06-11T04:11:17.000000Z"
+    "createdAt": "2025-03-27T02:43:17.443296Z",
+    "updatedAt": "2025-03-27T02:43:17.443296Z"
   },
   {
     "name": "Fruit Salad",
-    "description": "Campuran buah segar dengan sirup ringan.",
+    "description": "Mixed fresh fruits with a light syrup.",
     "price": 55000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 6,
     "authorId": 5,
+    "createdAt": "2025-03-28T21:16:41.556698Z",
+    "updatedAt": "2025-03-28T21:16:41.556698Z"
+  },
+  {
+    "name": "Onion Rings",
+    "description": "Crispy fried onion rings served with tangy dip.",
+    "price": 105000,
     "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
-    "createdAt": "2025-06-15T16:51:33.000000Z",
-    "updatedAt": "2025-06-15T16:51:33.000000Z"
+    "categoryId": 1,
+    "authorId": 1,
+    "createdAt": "2025-03-30T15:50:05.670100Z",
+    "updatedAt": "2025-03-30T15:50:05.670100Z"
+  },
+  {
+    "name": "Deviled Eggs",
+    "description": "Hard-boiled eggs filled with a creamy, seasoned yolk mixture.",
+    "price": 55000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 1,
+    "authorId": 2,
+    "createdAt": "2025-04-01T10:23:29.783502Z",
+    "updatedAt": "2025-04-01T10:23:29.783502Z"
+  },
+  {
+    "name": "Shrimp Cocktail",
+    "description": "Chilled shrimp served with zesty cocktail sauce.",
+    "price": 105000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 1,
+    "authorId": 3,
+    "createdAt": "2025-04-03T04:56:53.896904Z",
+    "updatedAt": "2025-04-03T04:56:53.896904Z"
+  },
+  {
+    "name": "Edamame",
+    "description": "Steamed soybeans sprinkled with sea salt.",
+    "price": 55000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 1,
+    "authorId": 4,
+    "createdAt": "2025-04-04T23:30:18.010306Z",
+    "updatedAt": "2025-04-04T23:30:18.010306Z"
+  },
+  {
+    "name": "Spinach Artichoke Dip",
+    "description": "Warm creamy dip served with tortilla chips.",
+    "price": 95000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 1,
+    "authorId": 5,
+    "createdAt": "2025-04-06T18:03:42.123708Z",
+    "updatedAt": "2025-04-06T18:03:42.123708Z"
+  },
+  {
+    "name": "Potato Skins",
+    "description": "Crispy potato skins loaded with cheese and bacon bits.",
+    "price": 85000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 1,
+    "authorId": 1,
+    "createdAt": "2025-04-08T12:37:06.237110Z",
+    "updatedAt": "2025-04-08T12:37:06.237110Z"
+  },
+  {
+    "name": "Cheese Platter",
+    "description": "Assorted cheeses served with crackers and fruit.",
+    "price": 65000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 1,
+    "authorId": 2,
+    "createdAt": "2025-04-10T07:10:30.350512Z",
+    "updatedAt": "2025-04-10T07:10:30.350512Z"
+  },
+  {
+    "name": "Chicken Satay",
+    "description": "Marinated chicken skewers served with peanut sauce.",
+    "price": 85000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 1,
+    "authorId": 3,
+    "createdAt": "2025-04-12T01:43:54.463914Z",
+    "updatedAt": "2025-04-12T01:43:54.463914Z"
+  },
+  {
+    "name": "Chicken Parmesan",
+    "description": "Breaded chicken breast topped with marinara and melted cheese.",
+    "price": 55000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 2,
+    "authorId": 4,
+    "createdAt": "2025-04-13T20:17:18.577316Z",
+    "updatedAt": "2025-04-13T20:17:18.577316Z"
+  },
+  {
+    "name": "Grilled Steak",
+    "description": "Juicy grilled steak seasoned with herbs and spices.",
+    "price": 30000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 2,
+    "authorId": 5,
+    "createdAt": "2025-04-15T14:50:42.690718Z",
+    "updatedAt": "2025-04-15T14:50:42.690718Z"
+  },
+  {
+    "name": "Shrimp Pasta",
+    "description": "Penne pasta tossed with garlic shrimp and herbs.",
+    "price": 55000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 2,
+    "authorId": 1,
+    "createdAt": "2025-04-17T09:24:06.804120Z",
+    "updatedAt": "2025-04-17T09:24:06.804120Z"
+  },
+  {
+    "name": "Vegetable Stir Fry",
+    "description": "Mixed vegetables saut\u00e9ed in a savory soy sauce.",
+    "price": 75000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 2,
+    "authorId": 2,
+    "createdAt": "2025-04-19T03:57:30.917522Z",
+    "updatedAt": "2025-04-19T03:57:30.917522Z"
+  },
+  {
+    "name": "Beef Tacos",
+    "description": "Soft tortillas filled with seasoned beef, lettuce, and cheese.",
+    "price": 30000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 2,
+    "authorId": 3,
+    "createdAt": "2025-04-20T22:30:55.030924Z",
+    "updatedAt": "2025-04-20T22:30:55.030924Z"
+  },
+  {
+    "name": "Lamb Shawarma",
+    "description": "Spiced lamb wrapped in pita with garlic sauce.",
+    "price": 85000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 2,
+    "authorId": 4,
+    "createdAt": "2025-04-22T17:04:19.144326Z",
+    "updatedAt": "2025-04-22T17:04:19.144326Z"
+  },
+  {
+    "name": "Falafel Wrap",
+    "description": "Chickpea patties wrapped with veggies and tahini sauce.",
+    "price": 55000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 2,
+    "authorId": 5,
+    "createdAt": "2025-04-24T11:37:43.257728Z",
+    "updatedAt": "2025-04-24T11:37:43.257728Z"
+  },
+  {
+    "name": "Moussaka",
+    "description": "Layered eggplant and meat casserole baked with b\u00e9chamel.",
+    "price": 105000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 2,
+    "authorId": 1,
+    "createdAt": "2025-04-26T06:11:07.371130Z",
+    "updatedAt": "2025-04-26T06:11:07.371130Z"
+  },
+  {
+    "name": "Apple Pie",
+    "description": "Classic pie filled with cinnamon-spiced apples.",
+    "price": 105000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 3,
+    "authorId": 2,
+    "createdAt": "2025-04-28T00:44:31.484532Z",
+    "updatedAt": "2025-04-28T00:44:31.484532Z"
+  },
+  {
+    "name": "Chocolate Mousse",
+    "description": "Light and airy chocolate dessert topped with whipped cream.",
+    "price": 65000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 3,
+    "authorId": 3,
+    "createdAt": "2025-04-29T19:17:55.597934Z",
+    "updatedAt": "2025-04-29T19:17:55.597934Z"
+  },
+  {
+    "name": "Ice Cream Sundae",
+    "description": "Vanilla ice cream with chocolate sauce and nuts.",
+    "price": 65000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 3,
+    "authorId": 4,
+    "createdAt": "2025-05-01T13:51:19.711336Z",
+    "updatedAt": "2025-05-01T13:51:19.711336Z"
+  },
+  {
+    "name": "Cr\u00e8me Caramel",
+    "description": "Smooth custard topped with soft caramel.",
+    "price": 75000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 3,
+    "authorId": 5,
+    "createdAt": "2025-05-03T08:24:43.824738Z",
+    "updatedAt": "2025-05-03T08:24:43.824738Z"
+  },
+  {
+    "name": "\u00c9clair",
+    "description": "Pastry filled with cream and topped with chocolate glaze.",
+    "price": 45000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 3,
+    "authorId": 1,
+    "createdAt": "2025-05-05T02:58:07.938140Z",
+    "updatedAt": "2025-05-05T02:58:07.938140Z"
+  },
+  {
+    "name": "Macaron",
+    "description": "Delicate almond meringue cookie sandwich with ganache.",
+    "price": 30000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 3,
+    "authorId": 2,
+    "createdAt": "2025-05-06T21:31:32.051542Z",
+    "updatedAt": "2025-05-06T21:31:32.051542Z"
+  },
+  {
+    "name": "Fruit Tart",
+    "description": "Buttery crust filled with pastry cream and fresh fruits.",
+    "price": 30000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 3,
+    "authorId": 3,
+    "createdAt": "2025-05-08T16:04:56.164944Z",
+    "updatedAt": "2025-05-08T16:04:56.164944Z"
+  },
+  {
+    "name": "Rice Pudding",
+    "description": "Creamy rice dessert flavored with cinnamon.",
+    "price": 85000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 3,
+    "authorId": 4,
+    "createdAt": "2025-05-10T10:38:20.278346Z",
+    "updatedAt": "2025-05-10T10:38:20.278346Z"
+  },
+  {
+    "name": "Mango Lassi",
+    "description": "Creamy yogurt drink blended with mango puree.",
+    "price": 55000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 4,
+    "authorId": 5,
+    "createdAt": "2025-05-12T05:11:44.391748Z",
+    "updatedAt": "2025-05-12T05:11:44.391748Z"
+  },
+  {
+    "name": "Strawberry Smoothie",
+    "description": "Fresh strawberries blended with yogurt and ice.",
+    "price": 65000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 4,
+    "authorId": 1,
+    "createdAt": "2025-05-13T23:45:08.505150Z",
+    "updatedAt": "2025-05-13T23:45:08.505150Z"
+  },
+  {
+    "name": "Hot Chocolate",
+    "description": "Rich chocolate drink topped with marshmallows.",
+    "price": 95000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 4,
+    "authorId": 2,
+    "createdAt": "2025-05-15T18:18:32.618552Z",
+    "updatedAt": "2025-05-15T18:18:32.618552Z"
+  },
+  {
+    "name": "Iced Matcha",
+    "description": "Chilled matcha green tea served over ice.",
+    "price": 85000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 4,
+    "authorId": 3,
+    "createdAt": "2025-05-17T12:51:56.731954Z",
+    "updatedAt": "2025-05-17T12:51:56.731954Z"
+  },
+  {
+    "name": "Lemonade",
+    "description": "Freshly squeezed lemon juice sweetened with sugar.",
+    "price": 65000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 4,
+    "authorId": 4,
+    "createdAt": "2025-05-19T07:25:20.845356Z",
+    "updatedAt": "2025-05-19T07:25:20.845356Z"
+  },
+  {
+    "name": "Coconut Water",
+    "description": "Pure coconut water served chilled.",
+    "price": 85000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 4,
+    "authorId": 5,
+    "createdAt": "2025-05-21T01:58:44.958758Z",
+    "updatedAt": "2025-05-21T01:58:44.958758Z"
+  },
+  {
+    "name": "Chai Tea",
+    "description": "Spiced tea brewed with milk and aromatic spices.",
+    "price": 105000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 4,
+    "authorId": 1,
+    "createdAt": "2025-05-22T20:32:09.072160Z",
+    "updatedAt": "2025-05-22T20:32:09.072160Z"
+  },
+  {
+    "name": "Espresso",
+    "description": "Strong brewed coffee served in a small cup.",
+    "price": 65000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 4,
+    "authorId": 2,
+    "createdAt": "2025-05-24T15:05:33.185562Z",
+    "updatedAt": "2025-05-24T15:05:33.185562Z"
+  },
+  {
+    "name": "Fettuccine Pesto",
+    "description": "Fettuccine pasta tossed in fresh basil pesto.",
+    "price": 75000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 5,
+    "authorId": 3,
+    "createdAt": "2025-05-26T09:38:57.298964Z",
+    "updatedAt": "2025-05-26T09:38:57.298964Z"
+  },
+  {
+    "name": "Tortellini Alfredo",
+    "description": "Cheese-filled tortellini in creamy Alfredo sauce.",
+    "price": 105000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 5,
+    "authorId": 4,
+    "createdAt": "2025-05-28T04:12:21.412366Z",
+    "updatedAt": "2025-05-28T04:12:21.412366Z"
+  },
+  {
+    "name": "Lasagne Verde",
+    "description": "Spinach and ricotta layered lasagna baked to perfection.",
+    "price": 30000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 5,
+    "authorId": 5,
+    "createdAt": "2025-05-29T22:45:45.525768Z",
+    "updatedAt": "2025-05-29T22:45:45.525768Z"
+  },
+  {
+    "name": "Spaghetti Bolognese",
+    "description": "Spaghetti with hearty meat sauce.",
+    "price": 85000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 5,
+    "authorId": 1,
+    "createdAt": "2025-05-31T17:19:09.639170Z",
+    "updatedAt": "2025-05-31T17:19:09.639170Z"
+  },
+  {
+    "name": "Linguine Seafood",
+    "description": "Linguine tossed with mixed seafood and white wine sauce.",
+    "price": 75000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 5,
+    "authorId": 2,
+    "createdAt": "2025-06-02T11:52:33.752572Z",
+    "updatedAt": "2025-06-02T11:52:33.752572Z"
+  },
+  {
+    "name": "Penne Primavera",
+    "description": "Penne pasta with fresh spring vegetables.",
+    "price": 85000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 5,
+    "authorId": 3,
+    "createdAt": "2025-06-04T06:25:57.865974Z",
+    "updatedAt": "2025-06-04T06:25:57.865974Z"
+  },
+  {
+    "name": "Rigatoni alla Siciliana",
+    "description": "Rigatoni baked with eggplant and tomato sauce.",
+    "price": 65000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 5,
+    "authorId": 4,
+    "createdAt": "2025-06-06T00:59:21.979376Z",
+    "updatedAt": "2025-06-06T00:59:21.979376Z"
+  },
+  {
+    "name": "Tagliatelle al Ragu",
+    "description": "Tagliatelle served with slow-cooked meat ragu.",
+    "price": 95000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 5,
+    "authorId": 5,
+    "createdAt": "2025-06-07T19:32:46.092778Z",
+    "updatedAt": "2025-06-07T19:32:46.092778Z"
+  },
+  {
+    "name": "Waldorf Salad",
+    "description": "Apples, celery, grapes, and nuts mixed with mayo.",
+    "price": 95000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 6,
+    "authorId": 1,
+    "createdAt": "2025-06-09T14:06:10.206180Z",
+    "updatedAt": "2025-06-09T14:06:10.206180Z"
+  },
+  {
+    "name": "Cobb Salad",
+    "description": "Mixed greens topped with chicken, bacon, and avocado.",
+    "price": 105000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 6,
+    "authorId": 2,
+    "createdAt": "2025-06-11T08:39:34.319582Z",
+    "updatedAt": "2025-06-11T08:39:34.319582Z"
+  },
+  {
+    "name": "Ni\u00e7oise Salad",
+    "description": "Tuna, olives, potatoes, and eggs on a bed of lettuce.",
+    "price": 85000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 6,
+    "authorId": 3,
+    "createdAt": "2025-06-13T03:12:58.432984Z",
+    "updatedAt": "2025-06-13T03:12:58.432984Z"
+  },
+  {
+    "name": "Chickpea Salad",
+    "description": "Chickpeas tossed with tomatoes, cucumbers, and herbs.",
+    "price": 55000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 6,
+    "authorId": 4,
+    "createdAt": "2025-06-14T21:46:22.546386Z",
+    "updatedAt": "2025-06-14T21:46:22.546386Z"
+  },
+  {
+    "name": "Kale Quinoa Salad",
+    "description": "Kale and quinoa mixed with dried cranberries and nuts.",
+    "price": 75000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 6,
+    "authorId": 5,
+    "createdAt": "2025-06-16T16:19:46.659788Z",
+    "updatedAt": "2025-06-16T16:19:46.659788Z"
+  },
+  {
+    "name": "Beetroot Salad",
+    "description": "Roasted beets with goat cheese and arugula.",
+    "price": 95000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 6,
+    "authorId": 1,
+    "createdAt": "2025-06-18T10:53:10.773190Z",
+    "updatedAt": "2025-06-18T10:53:10.773190Z"
+  },
+  {
+    "name": "Coleslaw",
+    "description": "Shredded cabbage mixed with creamy dressing.",
+    "price": 65000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 6,
+    "authorId": 2,
+    "createdAt": "2025-06-20T05:26:34.886592Z",
+    "updatedAt": "2025-06-20T05:26:34.886592Z"
+  },
+  {
+    "name": "Watermelon Feta Salad",
+    "description": "Sweet watermelon cubes with feta and mint.",
+    "price": 75000,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "categoryId": 6,
+    "authorId": 3,
+    "createdAt": "2025-06-21T23:59:58.999994Z",
+    "updatedAt": "2025-06-21T23:59:58.999994Z"
   }
 ]
