@@ -53,7 +53,7 @@ class UserController {
 
       const token = convertPayloadToToken(payload);
 
-      res.status(200).json({ access_token: token });
+      res.status(200).json({ access_token: token, id: foundUser.id });
     } catch (error) {
       next(error);
     }

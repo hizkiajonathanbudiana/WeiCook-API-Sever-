@@ -5,7 +5,7 @@ const { Op, where } = require("sequelize");
 class CuisineController {
   static async handleCreatePost(req, res, next) {
     try {
-      const { name, description, price, categoryId, authorId } = req.body;
+      const { name, description, price, categoryId } = req.body;
 
       if (!req.file) throw new Error("NO_IMG");
 
@@ -18,7 +18,7 @@ class CuisineController {
         price,
         imgUrl,
         categoryId,
-        authorId,
+        authorId: req.dataUser.id,
       });
 
       res.status(201).json({ createdPost: response });
@@ -104,14 +104,10 @@ class CuisineController {
     try {
       const { id } = req.params;
 
-      const { name, description, price, categoryId, authorId } = req.body;
-
-      if (!req.file) throw new Error("NO_IMG");
-
-      const imgUrl = await uploadToCloudinary(req.file, name);
+      const { name, description, price, categoryId, imgUrl } = req.body;
 
       await Cuisine.update(
-        { name, description, price, imgUrl, categoryId, authorId },
+        { name, description, price, imgUrl, categoryId },
         { where: { id: id } }
       );
 

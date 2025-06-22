@@ -14,8 +14,8 @@ module.exports = {
      * }], {});
      */
     data.forEach((el) => {
-      el.updatedAt = new Date();
-      el.createdAt = new Date();
+      el.updatedAt = new Date(el.updatedAt);
+      el.createdAt = new Date(el.createdAt);
     });
     await queryInterface.bulkInsert("Cuisines", data);
   },

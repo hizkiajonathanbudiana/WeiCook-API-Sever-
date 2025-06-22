@@ -30,6 +30,11 @@ router.use("/pub", pubRouter);
 //middleware global login
 router.use(protectorLogin);
 
+//auth buat front end
+router.get("/auth/me", protectorLogin, (req, res) => {
+  res.status(200).json({ user: req.dataUser });
+});
+
 //register with protectorAdmin
 router.post("/register", protectorAdmin, UserController.handleRegister);
 

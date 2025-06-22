@@ -3,176 +3,520 @@
     "name": "Bruschetta Classico",
     "description": "Roti panggang renyah dengan topping tomat segar, bawang putih, kemangi, dan minyak zaitun.",
     "price": 45000,
-    "imgUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRestaurant&psig=AOvVaw0Z1OPkwkzfWvavxTF8Vqw9&ust=1749862917146000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPD6rL-Z7Y0DFQAAAAAdAAAAABAE",
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 1,
-    "authorId": 1
+    "authorId": 1,
+    "createdAt": "2025-01-02T21:24:38.000000Z",
+    "updatedAt": "2025-01-02T21:24:38.000000Z"
   },
   {
     "name": "Nasi Goreng Seafood",
     "description": "Nasi goreng spesial dengan campuran udang segar, cumi, dan telur mata sapi.",
     "price": 65000,
-    "imgUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRestaurant&psig=AOvVaw0Z1OPkwkzfWvavxTF8Vqw9&ust=1749862917146000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPD6rL-Z7Y0DFQAAAAAdAAAAABAE",
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 2,
-    "authorId": 2
+    "authorId": 2,
+    "createdAt": "2025-01-04T14:20:56.000000Z",
+    "updatedAt": "2025-01-04T14:20:56.000000Z"
   },
   {
     "name": "Spaghetti Carbonara",
     "description": "Pasta spaghetti dengan saus krim, keju parmesan, dan potongan daging asap.",
     "price": 85000,
-    "imgUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRestaurant&psig=AOvVaw0Z1OPkwkzfWvavxTF8Vqw9&ust=1749862917146000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPD6rL-Z7Y0DFQAAAAAdAAAAABAE",
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 5,
-    "authorId": 3
+    "authorId": 3,
+    "createdAt": "2025-01-06T12:04:10.000000Z",
+    "updatedAt": "2025-01-06T12:04:10.000000Z"
   },
   {
     "name": "Lava Cake Chocolate",
     "description": "Kue coklat hangat dengan lelehan coklat di dalamnya, disajikan dengan es krim vanila.",
     "price": 55000,
-    "imgUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRestaurant&psig=AOvVaw0Z1OPkwkzfWvavxTF8Vqw9&ust=1749862917146000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPD6rL-Z7Y0DFQAAAAAdAAAAABAE",
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 3,
-    "authorId": 4
+    "authorId": 4,
+    "createdAt": "2025-01-07T09:46:50.000000Z",
+    "updatedAt": "2025-01-07T09:46:50.000000Z"
   },
   {
     "name": "Lemon Iced Tea",
     "description": "Es teh manis dengan perasan lemon segar.",
     "price": 25000,
-    "imgUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRestaurant&psig=AOvVaw0Z1OPkwkzfWvavxTF8Vqw9&ust=1749862917146000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPD6rL-Z7Y0DFQAAAAAdAAAAABAE",
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 4,
-    "authorId": 5
+    "authorId": 5,
+    "createdAt": "2025-01-11T02:40:54.000000Z",
+    "updatedAt": "2025-01-11T02:40:54.000000Z"
   },
   {
     "name": "Caesar Salad with Grilled Chicken",
     "description": "Salad klasik dengan selada romaine, crouton, keju parmesan, dan potongan ayam panggang.",
     "price": 75000,
-    "imgUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRestaurant&psig=AOvVaw0Z1OPkwkzfWvavxTF8Vqw9&ust=1749862917146000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPD6rL-Z7Y0DFQAAAAAdAAAAABAE",
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 6,
-    "authorId": 1
+    "authorId": 1,
+    "createdAt": "2025-01-19T19:28:11.000000Z",
+    "updatedAt": "2025-01-19T19:28:11.000000Z"
   },
   {
     "name": "Beef Rendang",
     "description": "Daging sapi yang dimasak perlahan dengan rempah-rempah khas Minang hingga empuk.",
     "price": 95000,
-    "imgUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRestaurant&psig=AOvVaw0Z1OPkwkzfWvavxTF8Vqw9&ust=1749862917146000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPD6rL-Z7Y0DFQAAAAAdAAAAABAE",
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 2,
-    "authorId": 2
+    "authorId": 2,
+    "createdAt": "2025-01-21T14:24:51.000000Z",
+    "updatedAt": "2025-01-21T14:24:51.000000Z"
   },
   {
     "name": "Fettuccine Alfredo",
     "description": "Pasta fettuccine dengan saus alfredo klasik yang creamy dan kaya rasa.",
     "price": 80000,
-    "imgUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRestaurant&psig=AOvVaw0Z1OPkwkzfWvavxTF8Vqw9&ust=1749862917146000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPD6rL-Z7Y0DFQAAAAAdAAAAABAE",
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 5,
-    "authorId": 3
+    "authorId": 3,
+    "createdAt": "2025-01-22T03:09:00.000000Z",
+    "updatedAt": "2025-01-22T03:09:00.000000Z"
   },
   {
     "name": "Panna Cotta",
     "description": "Dessert krim manis khas Italia dengan saus stroberi.",
     "price": 50000,
-    "imgUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRestaurant&psig=AOvVaw0Z1OPkwkzfWvavxTF8Vqw9&ust=1749862917146000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPD6rL-Z7Y0DFQAAAAAdAAAAABAE",
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 3,
-    "authorId": 4
+    "authorId": 4,
+    "createdAt": "2025-01-22T06:36:34.000000Z",
+    "updatedAt": "2025-01-22T06:36:34.000000Z"
   },
   {
     "name": "Spring Rolls",
     "description": "Lumpia goreng renyah dengan isian sayuran dan ayam.",
     "price": 40000,
-    "imgUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRestaurant&psig=AOvVaw0Z1OPkwkzfWvavxTF8Vqw9&ust=1749862917146000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPD6rL-Z7Y0DFQAAAAAdAAAAABAE",
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 1,
-    "authorId": 5
+    "authorId": 5,
+    "createdAt": "2025-01-28T08:16:42.000000Z",
+    "updatedAt": "2025-01-28T08:16:42.000000Z"
   },
   {
     "name": "Sop Buntut",
     "description": "Sop buntut sapi legendaris dengan kuah bening yang kaya rempah.",
     "price": 110000,
-    "imgUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRestaurant&psig=AOvVaw0Z1OPkwkzfWvavxTF8Vqw9&ust=1749862917146000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPD6rL-Z7Y0DFQAAAAAdAAAAABAE",
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 2,
-    "authorId": 1
+    "authorId": 1,
+    "createdAt": "2025-01-30T01:59:59.000000Z",
+    "updatedAt": "2025-01-30T01:59:59.000000Z"
   },
   {
     "name": "Avocado Juice",
     "description": "Jus alpukat segar dengan susu kental manis coklat.",
     "price": 35000,
-    "imgUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRestaurant&psig=AOvVaw0Z1OPkwkzfWvavxTF8Vqw9&ust=1749862917146000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPD6rL-Z7Y0DFQAAAAAdAAAAABAE",
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 4,
-    "authorId": 2
+    "authorId": 2,
+    "createdAt": "2025-02-03T03:28:10.000000Z",
+    "updatedAt": "2025-02-03T03:28:10.000000Z"
   },
   {
     "name": "Salmon Teriyaki",
     "description": "Potongan salmon segar yang dipanggang dengan saus teriyaki manis dan gurih.",
     "price": 125000,
-    "imgUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRestaurant&psig=AOvVaw0Z1OPkwkzfWvavxTF8Vqw9&ust=1749862917146000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPD6rL-Z7Y0DFQAAAAAdAAAAABAE",
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 2,
-    "authorId": 3
+    "authorId": 3,
+    "createdAt": "2025-02-06T17:45:03.000000Z",
+    "updatedAt": "2025-02-06T17:45:03.000000Z"
   },
   {
     "name": "Calamari Rings",
     "description": "Cincin cumi yang digoreng renyah disajikan dengan saus tartar.",
     "price": 50000,
-    "imgUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRestaurant&psig=AOvVaw0Z1OPkwkzfWvavxTF8Vqw9&ust=1749862917146000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPD6rL-Z7Y0DFQAAAAAdAAAAABAE",
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 1,
-    "authorId": 4
+    "authorId": 4,
+    "createdAt": "2025-02-11T05:43:23.000000Z",
+    "updatedAt": "2025-02-11T05:43:23.000000Z"
   },
   {
     "name": "Lasagna al Forno",
     "description": "Lapisan pasta, saus daging bolognese, saus bechamel, dan keju mozzarella yang dipanggang.",
     "price": 90000,
-    "imgUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRestaurant&psig=AOvVaw0Z1OPkwkzfWvavxTF8Vqw9&ust=1749862917146000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPD6rL-Z7Y0DFQAAAAAdAAAAABAE",
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 5,
-    "authorId": 5
+    "authorId": 5,
+    "createdAt": "2025-02-14T13:52:50.000000Z",
+    "updatedAt": "2025-02-14T13:52:50.000000Z"
   },
   {
     "name": "Tiramisu",
     "description": "Dessert kopi khas Italia dengan lapisan biskuit ladyfinger, mascarpone, dan taburan bubuk kakao.",
     "price": 60000,
-    "imgUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRestaurant&psig=AOvVaw0Z1OPkwkzfWvavxTF8Vqw9&ust=1749862917146000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPD6rL-Z7Y0DFQAAAAAdAAAAABAE",
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 3,
-    "authorId": 1
+    "authorId": 1,
+    "createdAt": "2025-02-16T05:43:48.000000Z",
+    "updatedAt": "2025-02-16T05:43:48.000000Z"
   },
   {
     "name": "Greek Salad",
     "description": "Salad segar dengan tomat, timun, bawang bombay, zaitun, dan keju feta.",
     "price": 65000,
-    "imgUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRestaurant&psig=AOvVaw0Z1OPkwkzfWvavxTF8Vqw9&ust=1749862917146000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPD6rL-Z7Y0DFQAAAAAdAAAAABAE",
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 6,
-    "authorId": 2
+    "authorId": 2,
+    "createdAt": "2025-02-26T11:29:58.000000Z",
+    "updatedAt": "2025-02-26T11:29:58.000000Z"
   },
   {
     "name": "Iga Bakar Madu",
     "description": "Iga sapi empuk yang dibakar dengan olesan saus madu manis pedas.",
     "price": 115000,
-    "imgUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRestaurant&psig=AOvVaw0Z1OPkwkzfWvavxTF8Vqw9&ust=1749862917146000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPD6rL-Z7Y0DFQAAAAAdAAAAABAE",
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 2,
-    "authorId": 3
+    "authorId": 3,
+    "createdAt": "2025-02-28T11:44:56.000000Z",
+    "updatedAt": "2025-02-28T11:44:56.000000Z"
   },
   {
     "name": "Chicken Gyoza",
     "description": "Pangsit Jepang dengan isian ayam dan sayuran, bisa digoreng atau dikukus.",
     "price": 48000,
-    "imgUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRestaurant&psig=AOvVaw0Z1OPkwkzfWvavxTF8Vqw9&ust=1749862917146000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPD6rL-Z7Y0DFQAAAAAdAAAAABAE",
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 1,
-    "authorId": 4
+    "authorId": 4,
+    "createdAt": "2025-03-07T06:53:55.000000Z",
+    "updatedAt": "2025-03-07T06:53:55.000000Z"
   },
   {
     "name": "Fresh Orange Juice",
     "description": "Jus jeruk peras murni tanpa tambahan gula.",
     "price": 30000,
-    "imgUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRestaurant&psig=AOvVaw0Z1OPkwkzfWvavxTF8Vqw9&ust=1749862917146000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPD6rL-Z7Y0DFQAAAAAdAAAAABAE",
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 4,
-    "authorId": 5
+    "authorId": 5,
+    "createdAt": "2025-03-08T09:29:11.000000Z",
+    "updatedAt": "2025-03-08T09:29:11.000000Z"
   },
   {
     "name": "Ayam Bakar Taliwang",
     "description": "Ayam bakar pedas khas Lombok dengan bumbu rempah yang meresap.",
     "price": 78000,
-    "imgUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRestaurant&psig=AOvVaw0Z1OPkwkzfWvavxTF8Vqw9&ust=1749862917146000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPD6rL-Z7Y0DFQAAAAAdAAAAABAE",
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 2,
-    "authorId": 1
+    "authorId": 1,
+    "createdAt": "2025-03-13T03:04:07.000000Z",
+    "updatedAt": "2025-03-13T03:04:07.000000Z"
   },
   {
     "name": "Cappuccino",
     "description": "Espresso dengan steamed milk dan busa susu tebal.",
     "price": 38000,
-    "imgUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRestaurant&psig=AOvVaw0Z1OPkwkzfWvavxTF8Vqw9&ust=1749862917146000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPD6rL-Z7Y0DFQAAAAAdAAAAABAE",
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
     "categoryId": 4,
-    "authorId": 2
+    "authorId": 2,
+    "createdAt": "2025-03-19T01:51:52.000000Z",
+    "updatedAt": "2025-03-19T01:51:52.000000Z"
+  },
+  {
+    "name": "Mozzarella Sticks",
+    "description": "Keju mozzarella yang dilapisi tepung panir dan digoreng hingga renyah.",
+    "price": 40000,
+    "categoryId": 1,
+    "authorId": 1,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "createdAt": "2025-03-20T18:40:12.000000Z",
+    "updatedAt": "2025-03-20T18:40:12.000000Z"
+  },
+  {
+    "name": "Chicken Wings Spicy",
+    "description": "Sayap ayam dengan bumbu pedas khas.",
+    "price": 55000,
+    "categoryId": 1,
+    "authorId": 2,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "createdAt": "2025-03-20T20:32:42.000000Z",
+    "updatedAt": "2025-03-20T20:32:42.000000Z"
+  },
+  {
+    "name": "Stuffed Mushrooms",
+    "description": "Jamur isi keju dan rempah yang dipanggang.",
+    "price": 45000,
+    "categoryId": 1,
+    "authorId": 3,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "createdAt": "2025-03-23T06:59:11.000000Z",
+    "updatedAt": "2025-03-23T06:59:11.000000Z"
+  },
+  {
+    "name": "Garlic Bread",
+    "description": "Roti panggang dengan olesan mentega bawang putih.",
+    "price": 30000,
+    "categoryId": 1,
+    "authorId": 4,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "createdAt": "2025-03-25T03:51:58.000000Z",
+    "updatedAt": "2025-03-25T03:51:58.000000Z"
+  },
+  {
+    "name": "Nachos Supreme",
+    "description": "Keripik jagung dengan topping keju, daging cincang, dan jalapeno.",
+    "price": 60000,
+    "categoryId": 1,
+    "authorId": 5,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "createdAt": "2025-03-28T20:43:20.000000Z",
+    "updatedAt": "2025-03-28T20:43:20.000000Z"
+  },
+  {
+    "name": "Sate Ayam",
+    "description": "Tusuk sate ayam dengan bumbu kacang khas.",
+    "price": 70000,
+    "categoryId": 2,
+    "authorId": 1,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "createdAt": "2025-03-29T05:21:00.000000Z",
+    "updatedAt": "2025-03-29T05:21:00.000000Z"
+  },
+  {
+    "name": "Grilled Lamb Chops",
+    "description": "Iga domba panggang dengan bumbu rosemary.",
+    "price": 120000,
+    "categoryId": 2,
+    "authorId": 2,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "createdAt": "2025-03-30T03:07:22.000000Z",
+    "updatedAt": "2025-03-30T03:07:22.000000Z"
+  },
+  {
+    "name": "Fish and Chips",
+    "description": "Ikan goreng tepung dengan kentang goreng renyah.",
+    "price": 85000,
+    "categoryId": 2,
+    "authorId": 3,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "createdAt": "2025-04-02T05:34:34.000000Z",
+    "updatedAt": "2025-04-02T05:34:34.000000Z"
+  },
+  {
+    "name": "Beef Burger Deluxe",
+    "description": "Burger daging sapi dengan keju cheddar, selada, dan saus spesial.",
+    "price": 90000,
+    "categoryId": 2,
+    "authorId": 4,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "createdAt": "2025-04-02T18:18:38.000000Z",
+    "updatedAt": "2025-04-02T18:18:38.000000Z"
+  },
+  {
+    "name": "Vegetarian Curry",
+    "description": "Kari sayuran berbumbu rempah khas.",
+    "price": 80000,
+    "categoryId": 2,
+    "authorId": 5,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "createdAt": "2025-04-03T14:19:42.000000Z",
+    "updatedAt": "2025-04-03T14:19:42.000000Z"
+  },
+  {
+    "name": "Chocolate Brownie",
+    "description": "Brownie coklat lembut dengan kacang kenari.",
+    "price": 45000,
+    "categoryId": 3,
+    "authorId": 1,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "createdAt": "2025-04-05T01:10:53.000000Z",
+    "updatedAt": "2025-04-05T01:10:53.000000Z"
+  },
+  {
+    "name": "Cheesecake",
+    "description": "Kue keju lembut dengan crust graham cracker.",
+    "price": 65000,
+    "categoryId": 3,
+    "authorId": 2,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "createdAt": "2025-04-06T03:49:42.000000Z",
+    "updatedAt": "2025-04-06T03:49:42.000000Z"
+  },
+  {
+    "name": "Banana Split",
+    "description": "Es krim dengan potongan pisang dan topping saus coklat.",
+    "price": 55000,
+    "categoryId": 3,
+    "authorId": 3,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "createdAt": "2025-04-12T04:46:59.000000Z",
+    "updatedAt": "2025-04-12T04:46:59.000000Z"
+  },
+  {
+    "name": "Creme Brulee",
+    "description": "Puding krim dengan lapisan gula karamel renyah.",
+    "price": 60000,
+    "categoryId": 3,
+    "authorId": 4,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "createdAt": "2025-04-21T03:14:23.000000Z",
+    "updatedAt": "2025-04-21T03:14:23.000000Z"
+  },
+  {
+    "name": "Mango Sorbet",
+    "description": "Sorbet mangga segar tanpa krim.",
+    "price": 40000,
+    "categoryId": 3,
+    "authorId": 5,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "createdAt": "2025-04-29T10:01:06.000000Z",
+    "updatedAt": "2025-04-29T10:01:06.000000Z"
+  },
+  {
+    "name": "Mango Smoothie",
+    "description": "Smoothie mangga dengan yogurt dan madu.",
+    "price": 35000,
+    "categoryId": 4,
+    "authorId": 1,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "createdAt": "2025-05-04T02:05:40.000000Z",
+    "updatedAt": "2025-05-04T02:05:40.000000Z"
+  },
+  {
+    "name": "Iced Coffee Latte",
+    "description": "Kopi susu dingin dengan es batu.",
+    "price": 38000,
+    "categoryId": 4,
+    "authorId": 2,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "createdAt": "2025-05-07T22:58:45.000000Z",
+    "updatedAt": "2025-05-07T22:58:45.000000Z"
+  },
+  {
+    "name": "Matcha Latte",
+    "description": "Minuman matcha dengan susu hangat.",
+    "price": 45000,
+    "categoryId": 4,
+    "authorId": 3,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "createdAt": "2025-05-08T12:11:32.000000Z",
+    "updatedAt": "2025-05-08T12:11:32.000000Z"
+  },
+  {
+    "name": "Chocolate Milkshake",
+    "description": "Milkshake coklat kental dengan whipped cream.",
+    "price": 48000,
+    "categoryId": 4,
+    "authorId": 4,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "createdAt": "2025-05-13T07:50:58.000000Z",
+    "updatedAt": "2025-05-13T07:50:58.000000Z"
+  },
+  {
+    "name": "Green Tea",
+    "description": "Teh hijau panas atau dingin sesuai pilihan.",
+    "price": 25000,
+    "categoryId": 4,
+    "authorId": 5,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "createdAt": "2025-05-13T10:54:37.000000Z",
+    "updatedAt": "2025-05-13T10:54:37.000000Z"
+  },
+  {
+    "name": "Penne Arrabiata",
+    "description": "Pasta penne dengan saus tomat pedas.",
+    "price": 80000,
+    "categoryId": 5,
+    "authorId": 1,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "createdAt": "2025-05-14T00:11:59.000000Z",
+    "updatedAt": "2025-05-14T00:11:59.000000Z"
+  },
+  {
+    "name": "Ravioli Spinach Ricotta",
+    "description": "Ravioli isi bayam dan keju ricotta.",
+    "price": 90000,
+    "categoryId": 5,
+    "authorId": 2,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "createdAt": "2025-05-19T01:29:34.000000Z",
+    "updatedAt": "2025-05-19T01:29:34.000000Z"
+  },
+  {
+    "name": "Gnocchi al Pesto",
+    "description": "Gnocchi kentang dengan saus pesto.",
+    "price": 85000,
+    "categoryId": 5,
+    "authorId": 3,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "createdAt": "2025-05-26T03:04:23.000000Z",
+    "updatedAt": "2025-05-26T03:04:23.000000Z"
+  },
+  {
+    "name": "Spaghetti Aglio e Olio",
+    "description": "Spaghetti dengan minyak zaitun, bawang putih, dan cabai.",
+    "price": 78000,
+    "categoryId": 5,
+    "authorId": 4,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "createdAt": "2025-05-28T09:38:57.000000Z",
+    "updatedAt": "2025-05-28T09:38:57.000000Z"
+  },
+  {
+    "name": "Mac and Cheese",
+    "description": "Pasta makaroni dengan saus keju creamy.",
+    "price": 75000,
+    "categoryId": 5,
+    "authorId": 5,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "createdAt": "2025-05-29T03:30:45.000000Z",
+    "updatedAt": "2025-05-29T03:30:45.000000Z"
+  },
+  {
+    "name": "Tuna Salad",
+    "description": "Salad dengan tuna, selada, dan dressing lemon.",
+    "price": 65000,
+    "categoryId": 6,
+    "authorId": 1,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "createdAt": "2025-05-29T16:57:37.000000Z",
+    "updatedAt": "2025-05-29T16:57:37.000000Z"
+  },
+  {
+    "name": "Quinoa Salad",
+    "description": "Salad quinoa dengan sayuran segar.",
+    "price": 70000,
+    "categoryId": 6,
+    "authorId": 2,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "createdAt": "2025-05-30T06:46:38.000000Z",
+    "updatedAt": "2025-05-30T06:46:38.000000Z"
+  },
+  {
+    "name": "Caprese Salad",
+    "description": "Tomat, mozzarella, dan basil dengan minyak zaitun.",
+    "price": 60000,
+    "categoryId": 6,
+    "authorId": 3,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "createdAt": "2025-06-04T22:04:35.000000Z",
+    "updatedAt": "2025-06-04T22:04:35.000000Z"
+  },
+  {
+    "name": "Kale Caesar Salad",
+    "description": "Salad kale dengan saus caesar dan crouton.",
+    "price": 68000,
+    "categoryId": 6,
+    "authorId": 4,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "createdAt": "2025-06-11T04:11:17.000000Z",
+    "updatedAt": "2025-06-11T04:11:17.000000Z"
+  },
+  {
+    "name": "Fruit Salad",
+    "description": "Campuran buah segar dengan sirup ringan.",
+    "price": 55000,
+    "categoryId": 6,
+    "authorId": 5,
+    "imgUrl": "https://res.cloudinary.com/dffbvex6y/image/upload/v1750387415/cuisine_WeiCook_.png",
+    "createdAt": "2025-06-15T16:51:33.000000Z",
+    "updatedAt": "2025-06-15T16:51:33.000000Z"
   }
 ]
