@@ -1,6 +1,6 @@
 [
   {
-    "username": "admin_satu",
+    "username": "Elon Musk",
     "email": "admin1@mail.com",
     "password": "12345",
     "role": "Admin",
@@ -8,7 +8,7 @@
     "address": "Jl. Merdeka No. 1, Jakarta"
   },
   {
-    "username": "admin_dua",
+    "username": "Oprah Winfrey",
     "email": "admin2@mail.com",
     "password": "12345",
     "role": "Admin",
@@ -16,7 +16,7 @@
     "address": "Jl. Merdeka No. 2, Jakarta"
   },
   {
-    "username": "staff_satu",
+    "username": "Zendaya",
     "email": "staff1@mail.com",
     "password": "12345",
     "role": "Staff",
@@ -24,7 +24,7 @@
     "address": "Jl. Pahlawan No. 10, Tangerang"
   },
   {
-    "username": "staff_dua",
+    "username": "Keanu Reeves",
     "email": "staff2@mail.com",
     "password": "12345",
     "role": "Staff",
@@ -32,7 +32,7 @@
     "address": "Jl. Pahlawan No. 20, Tangerang"
   },
   {
-    "username": "staff_tiga",
+    "username": "Emma Watson",
     "email": "staff3@mail.com",
     "password": "12345",
     "role": "Staff",
